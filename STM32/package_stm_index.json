@@ -10,9 +10,9 @@
       },
       "platforms": [
          {
-          "name": "STM32 NUCLEO-F1 Boards",
+          "name": "STM32 F1 Boards",
           "architecture": "stm32f1xx",
-          "version": "1.0.0",
+          "version": "2016.9.16",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-1.0.0.tar.bz2",
           "archiveFileName": "STM32F1-1.0.0.tar.bz2",
@@ -32,14 +32,14 @@
             {
               "packager": "STM32",
               "name": "nucleoFlasher",
-              "version": "1.0"
+              "version": "2016.9.16"
             }
           ]
         },
         {
-          "name": "STM32 NUCLEO-L4 Boards",
+          "name": "STM32 L4 Boards",
           "architecture": "stm32l4xx",
-          "version": "1.0.0",
+          "version": "2016.9.16",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32L4-1.0.0.tar.bz2",
           "archiveFileName": "STM32L4-1.0.0.tar.bz2",
@@ -59,7 +59,7 @@
             {
               "packager": "STM32",
               "name": "nucleoFlasher",
-              "version": "1.0"
+              "version": "2016.9.16"
             }
           ]
         }
@@ -101,7 +101,7 @@
         },
         {
           "name": "nucleoFlasher",
-          "version": "1.0",
+          "version": "2016.9.16",
           "systems": [
             {
               "host": "i686-linux-gnu",
