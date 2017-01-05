@@ -9,7 +9,7 @@
 #                Board Manager
 #
 #       OPTIONS: [-c <core name>] [-h] [-j <json file> ] [-p <packager name>]
-#                [-s] [-t <tools directory>] [-v <package version>]
+#                [-s] [-t <tools directory>] [-u <url>] [-v <package version>]
 #  REQUIREMENTS: jq (1.3)
 #          BUGS: ---
 #         NOTES: ---
@@ -50,7 +50,7 @@ usage()
     echo ""
 	echo "Usage: `basename $0` [-c <core name>] [-h] [-j <json file> ]"
     echo -e "\t\t\t[-p <packager name>] [-s] [-t <tools directory>]"
-    echo -e "\t\t\t[-v <package version>]"
+    echo -e "\t\t\t[-u <url>] [-v <package version>]"
     echo ""
     echo "Create package(s) and update json file for using with Arduino Board Manager"
     echo "(by default all directory from `pwd $0` will be packaged)"
@@ -76,6 +76,7 @@ usage()
     echo "   -t <tools name>: tools name (default: $toolsname)"
     echo -e "\tIf dir exists with this name it will be packaged."
     echo -e "\telse use latest version if exists."
+    echo "   -u <url>: url to use (default: $url)"
     echo "   -v <package version>: specify package version (default: $pkgver)"
     echo ""
     echo "Examples:"
@@ -413,7 +414,7 @@ main(){
 ###############################################################################
 # parse command line arguments
 # options may be followed by one colon to indicate they have a required arg
-options=`getopt -o c:hj:p:st:v: -- "$@"`
+options=`getopt -o c:hj:p:st:u:v: -- "$@"`
 
 if [ $? != 0 ] ; then usage; exit 1 ; fi
 
@@ -432,6 +433,10 @@ while true ; do
     -s) keptSource=1;
         shift;;
     -t) toolsname=${2%/};
+        shift 2;;
+    -u) url=$2;
+        toolsurl="${url}/tools";
+        coreurl="${url}/packages";
         shift 2;;
     -v) pkgver=$2
         shift 2;;
