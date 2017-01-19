@@ -37,33 +37,6 @@
           ]
         },
         {
-          "name": "STM32F1xx Boards",
-          "architecture": "stm32f1xx",
-          "version": "2016.9.16",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-1.0.0.tar.bz2",
-          "archiveFileName": "STM32F1-1.0.0.tar.bz2",
-          "checksum": "SHA-256:d0910d340c7e05eaf771c66d4e40688b7fe27721a0ddc0ee6111647e9c29fd63",
-          "size": "5780067",
-          "boards": [
-            {
-              "name": "Nucleo F103RB"
-            }
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "STM32",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
-            },
-            {
-              "packager": "STM32",
-              "name": "STM32Tools",
-              "version": "2016.9.16"
-            }
-          ]
-        },
-        {
           "name": "STM32L4xx Boards",
           "architecture": "stm32l4",
           "version": "2016.12.23",
@@ -72,33 +45,6 @@
           "archiveFileName": "STM32L4-1.0.1.tar.bz2",
           "checksum": "SHA-256:d3f72dba464ad0f95e395274ad0186b34f393e1fa7fe9c3a9295642f8afe1a01",
           "size": "5859365",
-          "boards": [
-            {
-              "name": "NUCLEO-L476RG"
-            }
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "STM32",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
-            },
-            {
-              "packager": "STM32",
-              "name": "STM32Tools",
-              "version": "2016.9.16"
-            }
-          ]
-        },
-        {
-          "name": "STM32L4xx Boards",
-          "architecture": "stm32l4xx",
-          "version": "2016.9.16",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32L4-1.0.0.tar.bz2",
-          "archiveFileName": "STM32L4-1.0.0.tar.bz2",
-          "checksum": "SHA-256:7e08593cbe49424bb80d8ed775b78aac33907b2ba519e8438d31cd3b05f2cd35",
-          "size": "5859830",
           "boards": [
             {
               "name": "NUCLEO-L476RG"
