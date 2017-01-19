@@ -1,139 +1,227 @@
 {
   "packages": [
     {
-      "name": "STM32",
-      "maintainer": "ST-Microelectronics",
-      "websiteURL": "http://www.st.com/en/microcontrollers.html",
-      "email": "",
-      "help": {
-        "online": "http://www.stm32duino.com/"
-      },
+      "tools": [
+        {
+          "systems": [
+            {
+              "size": "84537449",
+              "checksum": "SHA-256:fd8c111c861144f932728e00abd3f7d1107e186eb9cd6083a54c7236ea78b7c2",
+              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-windows.tar.gz",
+              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-windows.tar.gz",
+              "host": "i686-mingw32"
+            },
+            {
+              "size": "52518522",
+              "checksum": "SHA-256:3598acf21600f17a8e4a4e8e193dc422b894dc09384759b270b2ece5facb59c2",
+              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-mac.tar.gz",
+              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-mac.tar.gz",
+              "host": "x86_64-apple-darwin"
+            },
+            {
+              "size": "51395093",
+              "checksum": "SHA-256:d23f6626148396d6ec42a5b4d928955a703e0757829195fa71a939e5b86eecf6",
+              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-linux64.tar.gz",
+              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-linux64.tar.gz",
+              "host": "x86_64-pc-linux-gnu"
+            },
+            {
+              "size": "51029223",
+              "checksum": "SHA-256:ba1994235f69c526c564f65343f22ddbc9822b2ea8c5ee07dd79d89f6ace2498",
+              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-linux32.tar.gz",
+              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-linux32.tar.gz",
+              "host": "i686-pc-linux-gnu"
+            }
+          ],
+          "version": "4.8.3-2014q1",
+          "name": "arm-none-eabi-gcc"
+        },
+        {
+          "systems": [
+            {
+              "size": "6084",
+              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
+              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
+              "host": "i686-linux-gnu"
+            },
+            {
+              "size": "6084",
+              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
+              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
+              "host": "x86_64-pc-linux-gnu"
+            },
+            {
+              "size": "6084",
+              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
+              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
+              "host": "i686-mingw32"
+            },
+            {
+              "size": "6084",
+              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
+              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
+              "host": "i386-apple-darwin11"
+            }
+          ],
+          "version": "2016.9.16",
+          "name": "STM32Tools"
+        },
+        {
+          "systems": [
+            {
+              "size": "7901674",
+              "checksum": "SHA-256:1423d1db0e8406d8983d93507a89721ceb6feb78ba5bde3f98e33b06918e54bb",
+              "archiveFileName": "STM32Tools-2017.1.19.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-2017.1.19.tar.bz2",
+              "host": "i686-linux-gnu"
+            },
+            {
+              "size": "7901674",
+              "checksum": "SHA-256:1423d1db0e8406d8983d93507a89721ceb6feb78ba5bde3f98e33b06918e54bb",
+              "archiveFileName": "STM32Tools-2017.1.19.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-2017.1.19.tar.bz2",
+              "host": "x86_64-pc-linux-gnu"
+            },
+            {
+              "size": "7901674",
+              "checksum": "SHA-256:1423d1db0e8406d8983d93507a89721ceb6feb78ba5bde3f98e33b06918e54bb",
+              "archiveFileName": "STM32Tools-2017.1.19.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-2017.1.19.tar.bz2",
+              "host": "i686-mingw32"
+            },
+            {
+              "size": "7901674",
+              "checksum": "SHA-256:1423d1db0e8406d8983d93507a89721ceb6feb78ba5bde3f98e33b06918e54bb",
+              "archiveFileName": "STM32Tools-2017.1.19.tar.bz2",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-2017.1.19.tar.bz2",
+              "host": "i386-apple-darwin11"
+            }
+          ],
+          "version": "2017.1.19",
+          "name": "STM32Tools"
+        }
+      ],
       "platforms": [
-         {
-          "name": "STM32F1xx Boards",
-          "architecture": "stm32f1",
-          "version": "2016.12.23",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-1.0.1.tar.bz2",
+        {
           "archiveFileName": "STM32F1-1.0.1.tar.bz2",
-          "checksum": "SHA-256:939ac1f98ac4ec6f6a448234e602e483a869b5a0e97c0337ecabc17a2eda828b",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-1.0.1.tar.bz2",
           "size": "5780403",
+          "checksum": "SHA-256:939ac1f98ac4ec6f6a448234e602e483a869b5a0e97c0337ecabc17a2eda828b",
+          "toolsDependencies": [
+            {
+              "version": "4.8.3-2014q1",
+              "name": "arm-none-eabi-gcc",
+              "packager": "STM32"
+            },
+            {
+              "version": "2016.9.16",
+              "name": "STM32Tools",
+              "packager": "STM32"
+            }
+          ],
           "boards": [
             {
               "name": "Nucleo F103RB"
             }
           ],
-          "toolsDependencies": [
-            {
-              "packager": "STM32",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
-            },
-            {
-              "packager": "STM32",
-              "name": "STM32Tools",
-              "version": "2016.9.16"
-            }
-          ]
+          "name": "STM32F1xx Boards",
+          "architecture": "stm32f1",
+          "version": "2016.12.23",
+          "category": "Contributed"
         },
         {
-          "name": "STM32L4xx Boards",
-          "architecture": "stm32l4",
-          "version": "2016.12.23",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32L4-1.0.1.tar.bz2",
           "archiveFileName": "STM32L4-1.0.1.tar.bz2",
-          "checksum": "SHA-256:d3f72dba464ad0f95e395274ad0186b34f393e1fa7fe9c3a9295642f8afe1a01",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32L4-1.0.1.tar.bz2",
           "size": "5859365",
+          "checksum": "SHA-256:d3f72dba464ad0f95e395274ad0186b34f393e1fa7fe9c3a9295642f8afe1a01",
+          "toolsDependencies": [
+            {
+              "version": "4.8.3-2014q1",
+              "name": "arm-none-eabi-gcc",
+              "packager": "STM32"
+            },
+            {
+              "version": "2016.9.16",
+              "name": "STM32Tools",
+              "packager": "STM32"
+            }
+          ],
           "boards": [
             {
               "name": "NUCLEO-L476RG"
             }
           ],
+          "name": "STM32L4xx Boards",
+          "architecture": "stm32l4",
+          "version": "2016.12.23",
+          "category": "Contributed"
+        },
+        {
+          "checksum": "SHA-256:ac33eb1ad96a815f39072aa2907846b8f0ecb52df4d947638a5755ad95dc6a27",
+          "size": "5834470",
           "toolsDependencies": [
             {
-              "packager": "STM32",
+              "version": "4.8.3-2014q1",
               "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
+              "packager": "STM32"
             },
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2016.9.16"
+              "version": "2017.1.19"
             }
-          ]
-        }
-      ],
-      "tools": [
-        {
-          "name": "arm-none-eabi-gcc",
-          "version": "4.8.3-2014q1",
-          "systems": [
+          ],
+          "boards": [
             {
-              "host": "i686-mingw32",
-              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-windows.tar.gz",
-              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-windows.tar.gz",
-              "checksum": "SHA-256:fd8c111c861144f932728e00abd3f7d1107e186eb9cd6083a54c7236ea78b7c2",
-              "size": "84537449"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-mac.tar.gz",
-              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-mac.tar.gz",
-              "checksum": "SHA-256:3598acf21600f17a8e4a4e8e193dc422b894dc09384759b270b2ece5facb59c2",
-              "size": "52518522"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-linux64.tar.gz",
-              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-linux64.tar.gz",
-              "checksum": "SHA-256:d23f6626148396d6ec42a5b4d928955a703e0757829195fa71a939e5b86eecf6",
-              "size": "51395093"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "http://downloads.arduino.cc/gcc-arm-none-eabi-4.8.3-2014q1-linux32.tar.gz",
-              "archiveFileName": "gcc-arm-none-eabi-4.8.3-2014q1-linux32.tar.gz",
-              "checksum": "SHA-256:ba1994235f69c526c564f65343f22ddbc9822b2ea8c5ee07dd79d89f6ace2498",
-              "size": "51029223"
+              "name": "Nucleo F091RC"
             }
-          ]
+          ],
+          "architecture": "stm32f0",
+          "name": "STM32F0 Boards",
+          "category": "Contributed",
+          "version": "2017.1.19",
+          "archiveFileName": "STM32F0-2017.1.19.tar.bz2",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F0-2017.1.19.tar.bz2"
         },
         {
-          "name": "STM32Tools",
-          "version": "2016.9.16",
-          "systems": [
+          "version": "2017.1.19",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32L4-2017.1.19.tar.bz2",
+          "archiveFileName": "STM32L4-2017.1.19.tar.bz2",
+          "checksum": "SHA-256:7e6f5453464200ecc63e1413cfd77f7653b97ac9b22456b3658814b42cbea5f3",
+          "size": "5847666",
+          "boards": [
             {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
-              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
-              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
-              "size": "6084"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
-              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
-              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
-              "size": "6084"
-            },
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
-              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
-              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
-              "size": "6084"
-            },
-            {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/nucleoFlasher-1.0.tar.bz2",
-              "archiveFileName": "nucleoFlasher-1.0.tar.bz2",
-              "checksum": "SHA-256:859a336bbe61c5302a40424ea41867dd758fa0f4cd4d3d99629d22534bc8032e",
-              "size": "6084"
+              "name": "Nucleo L476RG"
             }
-          ]
+          ],
+          "toolsDependencies": [
+            {
+              "version": "4.8.3-2014q1",
+              "name": "arm-none-eabi-gcc",
+              "packager": "STM32"
+            },
+            {
+              "version": "2017.1.19",
+              "name": "STM32Tools",
+              "packager": "STM32"
+            }
+          ],
+          "architecture": "stm32l4",
+          "name": "STM32L4xx Boards"
         }
-      ]
+      ],
+      "help": {
+        "online": "http://www.stm32duino.com/"
+      },
+      "email": "",
+      "websiteURL": "http://www.st.com/en/microcontrollers.html",
+      "maintainer": "ST-Microelectronics",
+      "name": "STM32"
     }
   ]
 }
