@@ -1,47 +1,22 @@
 # BoardManagerFiles
-Storage for Arduino Board Manager JSON and package files etc
+Storage for Arduino Boards Manager JSON and package files etc
 
 Boards available:
 
-	* STM32F103RB-Nucleo
-	* STM32L476RG-Nucleo
+	* Nucleo F091RC
+	* Nucleo F103RB
+	* Nucleo L476RG
 
-### Installing STM32 Cores
+## Getting Started
 
-1- Launch Arduino.cc IDE. Click on "**File**" menu and then "**Preferences**".
+For full instructions on using the "**Boards Manager**", see the [Getting Started page](https://github.com/stm32duino/wiki/wiki/Getting-Started).
 
-![Preferences](/img/preferences.png)
+## Troubleshooting
 
-The "**Preferences**" dialog will open, then add the following link to the "*Additional Boards Managers URLs*" field:
+If you have any issue to download/use a package, you could [file an issue on Github](https://github.com/stm32duino/BoardManagerFiles/issues/new).
+Or submit a topic on the [stm32duino forum](http://stm32duino.com):
 
-https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/package_stm_index.json
+ questions on the [STM32 Core](http://stm32duino.com/viewforum.php?f=48)
 
-Click "**Ok**"
+ bugs/enhancements on the [STM core: Bugs and enhancements](http://stm32duino.com/viewforum.php?f=49)
 
-2- Click on "**Tools**" menu and then "**Boards > Boards Manager**"
-
-![BoardsManager Menu](/img/menu_bm.png)
-
-The board manager will open and you will see a list of installed and available boards. 
-
-Select "**Contributed**" type.
-
-![BoardsManager dialog](/img/boardsmanager.png)
-
-Select the STM32 core wanted and click on install.
-
-![BoardsManager dialog](/img/boardsmanager2.png)
-
-After installation is complete an "*INSTALLED*" tag appears next to the core name. 
-
-You can close the Board Manager.
-
-![Boards list](/img/boardslist.png)
-
-Now you can find the new board in the "**Board**" menu. 
-
-### Troubleshooting
-
-If you have any issue to download a package, ensure to not be behind a proxy.
-
-Else configure the proxy in the Arduino.cc IDE (open the "**Preferences**" dialog and select "**Network**" tab).
