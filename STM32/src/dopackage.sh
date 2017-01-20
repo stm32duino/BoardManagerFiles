@@ -82,7 +82,7 @@ usage()
     echo "Examples:"
     echo -e "  ./dopackage.sh  -d STM32F1\t# Create package without source for STM32F1 core: STM32F1-$pkgver.tar.bz2"
     echo -e "  ./dopackage.sh  -s -d STM32L4\t# Create package for STM32L4 core: STM32L4-$pkgver.tar.bz2"
-    echo -e "  ./dopackage.sh  -a\t\t# Create all packages"
+    echo -e "  ./dopackage.sh  \t\t# Create all packages"
     echo ""
     exit 0
 }
