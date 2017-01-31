@@ -265,7 +265,7 @@ updateJsonBoardName()
 # $3 architecture
 addJsonCore()
 {
-  jq -n '.+ [{ name: "'$1' Boards",
+  jq -n '.+ [{ name: "'$1' Cores",
                architecture: "'$3'",
                version: "'${pkgver}'",
 		       category: "Contributed",
