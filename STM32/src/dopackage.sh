@@ -28,7 +28,7 @@ PKGDIR=${TOPDIR}/packages
 TOOLSDIR=${TOPDIR}/tools
 
 pkgername="STM32"
-keptSource=0
+stripSource=1
 
 corename=""
 toolsname="STM32Tools"
@@ -72,7 +72,7 @@ usage()
     echo "   -h: print this help"
     echo "   -j: json file to update (default: $jsonFile)"
     echo "   -p <packager name>: packager name (default: $pkgername)"
-    echo "   -s: keep source"
+    echo "   -s: strip source"
     echo "   -t <tools name>: tools name (default: $toolsname)"
     echo -e "\tIf dir exists with this name it will be packaged."
     echo -e "\telse use latest version if exists."
@@ -210,7 +210,7 @@ generateCorePackage()
   cd $CURDIR
   destdir=${PKGDIR}
   # do the package
-  if [ $keptSource == 0 ]; then
+  if [ $stripSource == 0 ]; then
     echo -n "Generating package $2 without source..."
     if [ -d tmp ]; then
 		rm -rf tmp
@@ -226,7 +226,8 @@ generateCorePackage()
   else
     echo -n "Generate package $2..."
   fi
-
+  # before pack, tools path  need to be updated
+  sed -i 's/{runtime.hardware.path}\/tools/{runtime.tools.STM32Tools.path}\/tools/g' $1/platform.txt
   tar --exclude=".git" --exclude=".gitignore" -jhcf ${destdir}/$2 $1
   if [ $? -ne 0 ]; then
     echo "failed to create archive $2"
@@ -245,16 +246,21 @@ generateCorePackage()
 updateJsonBoardName()
 {
   local tmp=$IFS
+  local lb=`grep -E ".+\.menu\.[^\.]+\.[^\.]+=" $1/boards.txt | grep -v upload | cut -d'=' -f2`
+  if [ "$lb" == "" ]; then
+    lb=`grep "\.name" $1/boards.txt | cut -d'=' -f2`
+  fi
+
   IFS=$'\n'
   echo "$1 contains the following boards:"
   jq 'del(.[].boards[])' $tmpjsonFile > l$tmpjsonFile
   mv l$tmpjsonFile $tmpjsonFile
 
-  for i in $(grep "\.name" $1/boards.txt | cut -d'=' -f2); do
+  for i in $lb; do
     echo "$i"
 	jq '.[].boards |= .+ [{name: "'$i'"}]
        ' $tmpjsonFile > l$tmpjsonFile
-    jqHandler $? "Failed to add board name for $1" 17
+    jqHandler $? "Failed to add board name for $1" 18
     mv l$tmpjsonFile $tmpjsonFile
   done
   IFS=$tmp
@@ -286,6 +292,15 @@ addJsonCore()
        ' l$tmpjsonFile > $tmpjsonFile
     jqHandler $? "Failed to update core tools info" 16
   else
+    mv l$tmpjsonFile $tmpjsonFile
+  fi
+  if [ "$3" == "stm32" ]; then
+    # add CMSIS 4.5.0
+    jq '.[].toolsDependencies |= .+ [{ packager: "arduino",
+                                       name: "CMSIS",
+                                       version: "4.5.0"}]
+       ' $tmpjsonFile > l$tmpjsonFile
+    jqHandler $? "Failed to add CMSIS tools info" 17
     mv l$tmpjsonFile $tmpjsonFile
   fi
 }
@@ -430,7 +445,7 @@ while true ; do
         shift;;
     -p) pkgername=$2;
         shift 2;;
-    -s) keptSource=1;
+    -s) stripSource=0;
         shift;;
     -t) toolsname=${2%/};
         shift 2;;
