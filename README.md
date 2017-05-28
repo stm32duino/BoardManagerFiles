@@ -12,6 +12,19 @@ Boards available:
     * BluePill F103C8
     * MapleMini F103CB
 
+  * STM32F3
+    * [Nucleo F303RE](http://www.st.com/en/evaluation-tools/nucleo-f303re.html)
+
+  * STM32F4
+    * [Nucleo F429ZI](http://www.st.com/en/evaluation-tools/nucleo-f429zi.html)
+    * [STM32F407G-DISC1](http://www.st.com/en/evaluation-tools/stm32f4discovery.html)
+
+  * STM32F7
+    * [STM32F746G-DISCOVERY](http://www.st.com/en/evaluation-tools/32f746gdiscovery.html)
+
+  * STM32L0
+    * [Nucleo L053R8](http://www.st.com/en/evaluation-tools/nucleo-l053r8.html)
+
   * STM32L4
     * [Nucleo L476RG](http://www.st.com/en/evaluation-tools/nucleo-l476rg.html)
 
