@@ -29,7 +29,7 @@ TOOLSDIR=${TOPDIR}/tools
 
 pkgername="STM32"
 stripSource=1
-
+onlyCore=0
 corename=""
 toolsname="STM32Tools"
 toolsver=""
@@ -48,7 +48,7 @@ size=0
 usage()
 {
     echo ""
-	echo "Usage: `basename $0` [-c <core name>] [-h] [-j <json file> ]"
+    echo "Usage: `basename $0` [-c <core name>] [-h] [-j <json file> ] [-o]"
     echo -e "\t\t\t[-p <packager name>] [-s] [-t <tools directory>]"
     echo -e "\t\t\t[-u <url>] [-v <package version>]"
     echo ""
@@ -60,7 +60,7 @@ usage()
     echo "Directory name will be used as package name:"
     echo ""
     echo "  ln -s <path to the STM32F1 core repo> STM32F1"
-    echo "  git clone https://github.com/stm32duino/Arduino_Core_STM32L4.git STM32L4"
+    echo "  git clone https://github.com/stm32duino/Arduino_Core_STM32.git STM32"
     echo ""
     echo "To package the STM32 tools:"
     echo "  git clone https://github.com/stm32duino/Arduino_Tools.git STM32Tools"
@@ -71,6 +71,7 @@ usage()
     echo "   -c <core name>: generate package for core name from `pwd $0`"
     echo "   -h: print this help"
     echo "   -j: json file to update (default: $jsonFile)"
+    echo "   -o: only core(s) package(s)"
     echo "   -p <packager name>: packager name (default: $pkgername)"
     echo "   -s: strip source"
     echo "   -t <tools name>: tools name (default: $toolsname)"
@@ -80,9 +81,10 @@ usage()
     echo "   -v <package version>: specify package version (default: $pkgver)"
     echo ""
     echo "Examples:"
-    echo -e "  ./dopackage.sh  -d STM32F1\t# Create package without source for STM32F1 core: STM32F1-$pkgver.tar.bz2"
-    echo -e "  ./dopackage.sh  -s -d STM32L4\t# Create package for STM32L4 core: STM32L4-$pkgver.tar.bz2"
-    echo -e "  ./dopackage.sh  \t\t# Create all packages"
+    echo -e "  ./dopackage.sh -s -c STM32F1\t# Create package without source for STM32F1 core: STM32F1-$pkgver.tar.bz2"
+    echo -e "  ./dopackage.sh -o -c STM32\t# Create package: STM32-$pkgver.tar.bz2 without tools package"
+    echo -e "  ./dopackage.sh -o\t\t# Create all packages except tools one"
+    echo -e "  ./dopackage.sh \t\t# Create all packages"
     echo ""
     exit 0
 }
@@ -429,7 +431,7 @@ main(){
 ###############################################################################
 # parse command line arguments
 # options may be followed by one colon to indicate they have a required arg
-options=`getopt -o c:hj:p:st:u:v: -- "$@"`
+options=`getopt -o c:hj:op:st:u:v: -- "$@"`
 
 if [ $? != 0 ] ; then usage; exit 1 ; fi
 
@@ -442,6 +444,8 @@ while true ; do
     -h|-\?) usage
         shift;;
     -j) jsonFile=$2;
+        shift;;
+    -o) onlyCore=1;
         shift;;
     -p) pkgername=$2;
         shift 2;;
@@ -472,7 +476,7 @@ if [ "$jsonFile" == "" ] || [ ! -e $jsonFile ]; then
 fi
 
 # First manage tools part
-if [ -e $toolsname ]; then
+if [ $onlyCore -eq 0 ] && [ -e $toolsname ]; then
   # Create package
   pkgname=${toolsname}-${pkgver}.tar.bz2
   toolsver=${pkgver}
