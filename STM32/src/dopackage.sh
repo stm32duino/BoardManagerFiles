@@ -248,7 +248,7 @@ generateCorePackage()
 updateJsonBoardName()
 {
   local tmp=$IFS
-  local lb=`grep -E ".+\.menu\.[^\.]+\.[^\.]+=" $1/boards.txt | grep -v upload | cut -d'=' -f2`
+  local lb=`grep -E ".+\.menu\.board_part_num\.[^\.]+=" $1/boards.txt | cut -d'=' -f2`
   if [ "$lb" == "" ]; then
     lb=`grep "\.name" $1/boards.txt | cut -d'=' -f2`
   fi
