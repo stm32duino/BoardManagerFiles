@@ -10,69 +10,6 @@
       },
       "platforms": [
         {
-          "size": "5780403",
-          "checksum": "SHA-256:939ac1f98ac4ec6f6a448234e602e483a869b5a0e97c0337ecabc17a2eda828b",
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
-            },
-            {
-              "packager": "STM32",
-              "name": "STM32Tools",
-              "version": "2016.9.16"
-            }
-          ],
-          "boards": [
-            {
-              "name": "Nucleo F103RB"
-            }
-          ],
-          "name": "STM32F1xx Cores",
-          "architecture": "stm32f1",
-          "version": "2016.12.23",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-1.0.1.tar.bz2",
-          "archiveFileName": "STM32F1-1.0.1.tar.bz2"
-        },
-        {
-          "name": "STM32F1xx Cores",
-          "architecture": "stm32f1",
-          "version": "2017.1.20",
-          "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32F1-2017.1.20.tar.bz2",
-          "archiveFileName": "STM32F1-2017.1.20.tar.bz2",
-          "checksum": "SHA-256:4684181088bffd3512e8eac35cee2db7f492efdc9ed101969907b29247790de2",
-          "size": "6471688",
-          "boards": [
-            {
-              "name": "Nucleo F103RB"
-            },
-            {
-              "name": "STM32 VL Discovery STM32F100RB"
-            },
-            {
-              "name": "BluePill F103C8"
-            },
-            {
-              "name": "MapleMini F103CB"
-            }
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
-            },
-            {
-              "packager": "STM32",
-              "name": "STM32Tools",
-              "version": "2017.1.19"
-            }
-          ]
-        },
-        {
           "version": "2017.5.12",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.5.12.tar.bz2",
