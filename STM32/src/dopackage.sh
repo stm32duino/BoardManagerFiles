@@ -250,7 +250,10 @@ updateJsonBoardName()
   local tmp=$IFS
   local lb=`grep -E ".+\.menu\.board_part_num\.[^\.]+=" $1/boards.txt | cut -d'=' -f2`
   if [ "$lb" == "" ]; then
-    lb=`grep "\.name" $1/boards.txt | cut -d'=' -f2`
+    lb=`grep -E ".+\.menu\.pnum\.[^\.]+=" $1/boards.txt | cut -d'=' -f2`
+    if [ "$lb" == "" ]; then
+      lb=`grep "\.name" $1/boards.txt | cut -d'=' -f2`
+    fi
   fi
 
   IFS=$'\n'
