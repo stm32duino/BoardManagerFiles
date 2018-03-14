@@ -36,7 +36,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.5.12"
+              "version": "0.1.0"
             },
             {
               "packager": "arduino",
@@ -72,7 +72,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.5.12"
+              "version": "0.1.0"
             },
             {
               "packager": "arduino",
@@ -112,7 +112,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.7.13"
+              "version": "0.2.0"
             },
             {
               "packager": "arduino",
@@ -155,7 +155,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.7.13"
+              "version": "0.2.0"
             },
             {
               "packager": "arduino",
@@ -199,7 +199,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.8.31"
+              "version": "1.0.0"
             },
             {
               "packager": "arduino",
@@ -244,7 +244,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.9.22"
+              "version": "1.0.1"
             },
             {
               "packager": "arduino",
@@ -292,7 +292,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.9.22"
+              "version": "1.0.1"
             },
             {
               "packager": "arduino",
@@ -342,7 +342,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "2017.9.22"
+              "version": "1.0.1"
             },
             {
               "packager": "arduino",
@@ -423,7 +423,7 @@
         },
         {
           "name": "STM32Tools",
-          "version": "2017.5.12",
+          "version": "0.1.0",
           "systems": [
             {
               "size": "7919425",
@@ -457,7 +457,7 @@
         },
         {
           "name": "STM32Tools",
-          "version": "2017.7.13",
+          "version": "0.2.0",
           "systems": [
             {
               "host": "i686-linux-gnu",
@@ -491,7 +491,7 @@
         },
         {
           "name": "STM32Tools",
-          "version": "2017.8.31",
+          "version": "1.0.0",
           "systems": [
             {
               "size": "7929806",
@@ -525,7 +525,7 @@
         },
         {
           "name": "STM32Tools",
-          "version": "2017.9.22",
+          "version": "1.0.1",
           "systems": [
             {
               "size": "7929670",
