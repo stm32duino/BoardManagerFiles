@@ -12,7 +12,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.5.12",
+          "version": "0.1.0",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.5.12.tar.bz2",
           "archiveFileName": "STM32-2017.5.12.tar.bz2",
@@ -48,7 +48,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.6.2",
+          "version": "0.1.1",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.6.2.tar.bz2",
           "archiveFileName": "STM32-2017.6.2.tar.bz2",
@@ -84,7 +84,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.7.13",
+          "version": "0.2.0",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.7.13.tar.bz2",
           "archiveFileName": "STM32-2017.7.13.tar.bz2",
@@ -124,7 +124,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.8.4",
+          "version": "0.2.1",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.8.4.tar.bz2",
           "archiveFileName": "STM32-2017.8.4.tar.bz2",
@@ -167,7 +167,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.8.31",
+          "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.8.31.tar.bz2",
           "archiveFileName": "STM32-2017.8.31.tar.bz2",
@@ -211,7 +211,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.9.22",
+          "version": "1.0.1",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.9.22.tar.bz2",
           "archiveFileName": "STM32-2017.9.22.tar.bz2",
@@ -256,7 +256,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2017.11.24",
+          "version": "1.1.0",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2017.11.24.tar.bz2",
           "archiveFileName": "STM32-2017.11.24.tar.bz2",
@@ -304,7 +304,7 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "2018.1.18",
+          "version": "1.1.1",
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-2018.1.18.tar.bz2",
           "archiveFileName": "STM32-2018.1.18.tar.bz2",
