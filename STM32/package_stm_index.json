@@ -422,6 +422,41 @@
           ]
         },
         {
+          "name": "CMSIS",
+          "version": "5.3.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.3.0/CMSIS-5.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.3.0.tar.bz2",
+              "checksum": "SHA-256:7f1a669fa23fc51532d807955aa32976b89cb14675189d07a5ce3652bc1c8e3c",
+              "size": "42816664"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.3.0/CMSIS-5.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.3.0.tar.bz2",
+              "checksum": "SHA-256:7f1a669fa23fc51532d807955aa32976b89cb14675189d07a5ce3652bc1c8e3c",
+              "size": "42816664"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.3.0/CMSIS-5.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.3.0.tar.bz2",
+              "checksum": "SHA-256:7f1a669fa23fc51532d807955aa32976b89cb14675189d07a5ce3652bc1c8e3c",
+              "size": "42816664"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.3.0/CMSIS-5.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.3.0.tar.bz2",
+              "checksum": "SHA-256:7f1a669fa23fc51532d807955aa32976b89cb14675189d07a5ce3652bc1c8e3c",
+              "size": "42816664"
+            }
+          ]
+        },
+        {
           "name": "STM32Tools",
           "version": "0.1.0",
           "systems": [
