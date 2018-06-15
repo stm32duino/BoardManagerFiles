@@ -402,6 +402,61 @@
               "version": "5.3.0"
             }
           ]
+        },
+        {
+          "name": "STM32 Cores",
+          "architecture": "stm32",
+          "version": "1.3.0",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-1.3.0.tar.bz2",
+          "archiveFileName": "STM32-1.3.0.tar.bz2",
+          "checksum": "SHA-256:c9a601c202ab850e48b0c6eaceb817bc14b3dbf6c0af89da0a4c7f785447b08b",
+          "size": "16627675",
+          "boards": [
+            {"name": "Nucleo F207ZG"},
+            {"name": "Nucleo F429ZI"},
+            {"name": "Nucleo L496ZG"},
+            {"name": "Nucleo L496ZG-P"},
+            {"name": "Nucleo F030R8"},
+            {"name": "Nucleo F091RC"},
+            {"name": "Nucleo F103RB"},
+            {"name": "Nucleo F302R8"},
+            {"name": "Nucleo F303RE"},
+            {"name": "Nucleo F401RE"},
+            {"name": "Nucleo F411RE"},
+            {"name": "Nucleo F446RE"},
+            {"name": "Nucleo L053R8"},
+            {"name": "Nucleo L152RE"},
+            {"name": "Nucleo L476RG"},
+            {"name": "Nucleo L031K6"},
+            {"name": "Nucleo L432KC"},
+            {"name": "Nucleo F303K8"},
+            {"name": "STM32F030R8-DISCVL"},
+            {"name": "STM32F100RB-DISCVL"},
+            {"name": "STM32F407G-DISC1"},
+            {"name": "STM32F746G-DISCOVERY"},
+            {"name": "STM32L475VG-DISCOVERY-IOT"},
+            {"name": "Discovery L072CZ-LRWAN1"},
+            {"name": "BluePill F103C8"},
+            {"name": "Maple Mini F103CB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STM32",
+              "name": "arm-none-eabi-gcc",
+              "version": "6-2017-q2-update"
+            },
+            {
+              "packager": "STM32",
+              "name": "STM32Tools",
+              "version": "1.1.0"
+            },
+            {
+              "packager": "STM32",
+              "name": "CMSIS",
+              "version": "5.3.0"
+            }
+          ]
         }
       ],
       "tools": [
@@ -675,6 +730,41 @@
               "archiveFileName": "STM32Tools-1.0.2.tar.bz2",
               "checksum": "SHA-256:0594450845a3645d5f9bb00d3f5bca8cb3dc855b04bbf78c960a4b8ed23bdf6a",
               "size": "8137349"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "1.1.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.1.0-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-1.1.0-windows.tar.bz2",
+              "checksum": "SHA-256:2996fb32f778def2f21eafcedf6f32945e0487b43e4cf23462192147ad3ff3a7",
+              "size": "6171696"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.1.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-1.1.0-mac.tar.bz2",
+              "checksum": "SHA-256:5ee517a888bce7788f3cba65d20aa64d2ea97d8161f09e8c28adeb6755f9c073",
+              "size": "779406"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.1.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.1.0-linux.tar.bz2",
+              "checksum": "SHA-256:fe51763fba6ade899f178afa05eca8e95852e41226cef5203125ddfb7db4b078",
+              "size": "1445336"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.1.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.1.0-linux.tar.bz2",
+              "checksum": "SHA-256:fe51763fba6ade899f178afa05eca8e95852e41226cef5203125ddfb7db4b078",
+              "size": "1445336"
             }
           ]
         }
