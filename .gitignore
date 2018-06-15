@@ -1,0 +1,3 @@
+*.swp
+STM32/src/*.json
+STM32/src/*.tar.bz2
