@@ -1,5 +1,5 @@
 # BoardManagerFiles
-Storage for Arduino Boards Manager JSON and package files etc
+Storage for Arduino Boards Manager JSON and package files for the [STM32 core](https://github.com/stm32duino/Arduino_Core_STM32) support.
 
 **Warning**: release versioning has been changed from date versioning to semantic one. See [Release Versioning change](https://github.com/stm32duino/wiki/wiki/Release-Versioning-change)
 
