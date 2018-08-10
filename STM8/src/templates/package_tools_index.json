@@ -1,0 +1,14 @@
+        {
+          "name": "%%PACKAGENAME%%",
+          "version": "%%VERSION%%",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM8/tools/%%FILENAMEWIN%%",
+              "archiveFileName": "%%FILENAMEWIN%%",
+              "checksum": "SHA-256:%%CHECKSUMWIN%%",
+              "size": "%%SIZEWIN%%"
+            }
+          ]
+        }

@@ -1,4 +1,6 @@
 *.swp
+STM8/src/*.json
+STM8/src/*.tar.bz2
 STM32/src/*.json
 STM32/src/*.tar.bz2
 STM32/src/download

@@ -1,0 +1,30 @@
+{
+  "packages": [
+    {
+      "name": "STM8",
+      "maintainer": "STMicroelectronics",
+      "websiteURL": "http://www.st.com/en/microcontrollers.html",
+      "email": "",
+      "help": {
+        "online": "http://www.stm32duino.com/"
+      },
+      "platforms": [
+      ],
+      "tools": [
+        {
+          "name": "cxppstm8",
+          "version": "4.1.1",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://cosmicsoftware.com/Arduino/cxppstm8.tar.bz2",
+              "archiveFileName": "cxppstm8.tar.bz2",
+              "checksum": "SHA-256:aac35551f128a0edb175ba89b12a992bfc707eceb3fcc205896c2a4872c66732",
+              "size": "29135748"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
