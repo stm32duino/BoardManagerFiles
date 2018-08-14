@@ -3,6 +3,8 @@ SHELL = /bin/sh
 .SUFFIXES: .tar.bz2
 
 ROOT_PATH := .
+TOOLS_PATH := ../tools
+CORE_PATH := ../packages
 
 OS ?=$(shell uname -s)
 
@@ -118,6 +120,7 @@ postpackaging_core:
 	@BOARDS_LIST=`grep -E ".+\.menu\.pnum\.[^\.]+=" $(PACKAGE_FOLDER)/boards.txt | cut -d'=' -f2 | awk '{print "            {\"name\": \""$$0"\"},"}'`; \
 	BOARDS_LIST=$${BOARDS_LIST::-1}; \
 	cat templates/package_core_index.json | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAME%%/$(PACKAGE_FILENAME)/ | sed s/%%CHECKSUM%%/$(PACKAGE_CHKSUM)/ | sed s/%%SIZE%%/$(PACKAGE_SIZE)/ | sed -e "s/%%BOARDSLIST%%/$${BOARDS_LIST//$$'\n'/\\n}/" > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
+	@mv $(PACKAGE_FILENAME) $(CORE_PATH)/
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
 
 postpackaging_tools:
@@ -131,4 +134,5 @@ postpackaging_tools:
 	@echo "PACKAGE_MAC_SIZE        = $(PACKAGE_MAC_SIZE)"
 	@echo "PACKAGE_MAC_CHKSUM      = $(PACKAGE_MAC_CHKSUM)"
 	@cat templates/package_tools_index.json | sed s/%%PACKAGENAME%%/$(PACKAGE_NAME)/ | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAMEWIN%%/$(PACKAGE_WIN_FILENAME)/ | sed s/%%CHECKSUMWIN%%/$(PACKAGE_WIN_CHKSUM)/ | sed s/%%SIZEWIN%%/$(PACKAGE_WIN_SIZE)/ | sed s/%%FILENAMEMAC%%/$(PACKAGE_MAC_FILENAME)/ | sed s/%%CHECKSUMMAC%%/$(PACKAGE_MAC_CHKSUM)/ | sed s/%%SIZEMAC%%/$(PACKAGE_MAC_SIZE)/ | sed s/%%FILENAMELINUX%%/$(PACKAGE_LINUX_FILENAME)/ | sed s/%%CHECKSUMLINUX%%/$(PACKAGE_LINUX_CHKSUM)/ | sed s/%%SIZELINUX%%/$(PACKAGE_LINUX_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
+	@mv $(PACKAGE_WIN_FILENAME) $(PACKAGE_LINUX_FILENAME) $(PACKAGE_MAC_FILENAME) $(TOOLS_PATH)/
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
