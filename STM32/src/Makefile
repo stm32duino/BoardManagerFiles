@@ -38,18 +38,18 @@ core: PACKAGE_VERSION := $(shell git --git-dir=$(PACKAGE_FOLDER)/.git describe -
 core: PACKAGE_DATE := $(firstword $(shell git --git-dir=$(PACKAGE_FOLDER)/.git log -1 --pretty=format:%ci))
 core: clean print_info
 	@echo ----------------------------------------------------------
-	@echo "Packaging core."
-	git --git-dir=$(PACKAGE_FOLDER)/.git show HEAD --pretty=short --no-patch  > $(PACKAGE_FOLDER)/package_version.txt
-	sed -i 's/{runtime.hardware.path}\/tools/{runtime.tools.STM32Tools.path}\/tools/g' $(PACKAGE_FOLDER)/platform.txt	
-	tar --mtime='$(PACKAGE_DATE)' \
+	@echo "Packaging $@..."
+	@git --git-dir=$(PACKAGE_FOLDER)/.git show HEAD --pretty=short --no-patch  > $(PACKAGE_FOLDER)/package_version.txt
+	@sed -i 's/{runtime.hardware.path}\/tools/{runtime.tools.STM32Tools.path}\/tools/g' $(PACKAGE_FOLDER)/platform.txt
+	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
 		--exclude=.gitattributes \
 		--exclude=.github \
 		--exclude=.gitignore \
 		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
-	rm -f $(PACKAGE_FOLDER)/package_version.txt
-	git --git-dir=$(PACKAGE_FOLDER)/.git checkout .
+	@-$(RM) $(PACKAGE_FOLDER)/package_version.txt
+	@git --git-dir=$(PACKAGE_FOLDER)/.git checkout .
 	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) PACKAGE_FOLDER="$(PACKAGE_FOLDER)" --no-builtin-rules postpackaging_core -C .
 	@echo ----------------------------------------------------------
 
@@ -59,9 +59,9 @@ tools: PACKAGE_VERSION := $(shell git --git-dir=$(PACKAGE_FOLDER)/.git describe 
 tools: PACKAGE_DATE := $(firstword $(shell git --git-dir=$(PACKAGE_FOLDER)/.git log -1 --pretty=format:%ci))
 tools: clean print_info
 	@echo ----------------------------------------------------------
-	@echo "Packaging tools."
-	git --git-dir=$(PACKAGE_FOLDER)/.git show HEAD --pretty=short --no-patch  > $(PACKAGE_FOLDER)/package_version.txt
-	tar --mtime='$(PACKAGE_DATE)' \
+	@echo "Packaging $@..."
+	@git --git-dir=$(PACKAGE_FOLDER)/.git show HEAD --pretty=short --no-patch  > $(PACKAGE_FOLDER)/package_version.txt
+	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
 		--exclude=.gitattributes \
 		--exclude=.github \
@@ -71,7 +71,7 @@ tools: clean print_info
 		--exclude=macosx \
 		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-windows.tar.bz2" "$(PACKAGE_FOLDER)"
-	tar --mtime='$(PACKAGE_DATE)' \
+	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
 		--exclude=.gitattributes \
 		--exclude=.github \
@@ -80,7 +80,7 @@ tools: clean print_info
 		--exclude=win \
 		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-linux.tar.bz2" "$(PACKAGE_FOLDER)"
-	tar --mtime='$(PACKAGE_DATE)' \
+	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
 		--exclude=.gitattributes \
 		--exclude=.github \
@@ -90,7 +90,7 @@ tools: clean print_info
 		--exclude=win \
 		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-mac.tar.bz2" "$(PACKAGE_FOLDER)"
-	rm -f $(PACKAGE_FOLDER)/package_version.txt
+	@-$(RM) $(PACKAGE_FOLDER)/package_version.txt
 	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_tools -C .
 	@echo ----------------------------------------------------------
 
@@ -115,7 +115,7 @@ postpackaging_core:
 	@echo "PACKAGE_CHKSUM      = $(PACKAGE_CHKSUM)"
 	@echo "PACKAGE_SIZE        = $(PACKAGE_SIZE)"
 	@echo "PACKAGE_FILENAME    = $(PACKAGE_FILENAME)"
-	BOARDS_LIST=`grep -E ".+\.menu\.pnum\.[^\.]+=" $(PACKAGE_FOLDER)/boards.txt | cut -d'=' -f2 | awk '{print "            {\"name\": \""$$0"\"},"}'`; \
+	@BOARDS_LIST=`grep -E ".+\.menu\.pnum\.[^\.]+=" $(PACKAGE_FOLDER)/boards.txt | cut -d'=' -f2 | awk '{print "            {\"name\": \""$$0"\"},"}'`; \
 	BOARDS_LIST=$${BOARDS_LIST::-1}; \
 	cat templates/package_core_index.json | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAME%%/$(PACKAGE_FILENAME)/ | sed s/%%CHECKSUM%%/$(PACKAGE_CHKSUM)/ | sed s/%%SIZE%%/$(PACKAGE_SIZE)/ | sed -e "s/%%BOARDSLIST%%/$${BOARDS_LIST//$$'\n'/\\n}/" > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
@@ -130,5 +130,5 @@ postpackaging_tools:
 	@echo "PACKAGE_MAC_FILENAME    = $(PACKAGE_MAC_FILENAME)"
 	@echo "PACKAGE_MAC_SIZE        = $(PACKAGE_MAC_SIZE)"
 	@echo "PACKAGE_MAC_CHKSUM      = $(PACKAGE_MAC_CHKSUM)"
-	cat templates/package_tools_index.json | sed s/%%PACKAGENAME%%/$(PACKAGE_NAME)/ | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAMEWIN%%/$(PACKAGE_WIN_FILENAME)/ | sed s/%%CHECKSUMWIN%%/$(PACKAGE_WIN_CHKSUM)/ | sed s/%%SIZEWIN%%/$(PACKAGE_WIN_SIZE)/ | sed s/%%FILENAMEMAC%%/$(PACKAGE_MAC_FILENAME)/ | sed s/%%CHECKSUMMAC%%/$(PACKAGE_MAC_CHKSUM)/ | sed s/%%SIZEMAC%%/$(PACKAGE_MAC_SIZE)/ | sed s/%%FILENAMELINUX%%/$(PACKAGE_LINUX_FILENAME)/ | sed s/%%CHECKSUMLINUX%%/$(PACKAGE_LINUX_CHKSUM)/ | sed s/%%SIZELINUX%%/$(PACKAGE_LINUX_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
+	@cat templates/package_tools_index.json | sed s/%%PACKAGENAME%%/$(PACKAGE_NAME)/ | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAMEWIN%%/$(PACKAGE_WIN_FILENAME)/ | sed s/%%CHECKSUMWIN%%/$(PACKAGE_WIN_CHKSUM)/ | sed s/%%SIZEWIN%%/$(PACKAGE_WIN_SIZE)/ | sed s/%%FILENAMEMAC%%/$(PACKAGE_MAC_FILENAME)/ | sed s/%%CHECKSUMMAC%%/$(PACKAGE_MAC_CHKSUM)/ | sed s/%%SIZEMAC%%/$(PACKAGE_MAC_SIZE)/ | sed s/%%FILENAMELINUX%%/$(PACKAGE_LINUX_FILENAME)/ | sed s/%%CHECKSUMLINUX%%/$(PACKAGE_LINUX_CHKSUM)/ | sed s/%%SIZELINUX%%/$(PACKAGE_LINUX_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
