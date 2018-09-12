@@ -4,3 +4,9 @@
 [submodule "STM32/src/Arduino_Tools"]
 	path = STM32/src/Arduino_Tools
 	url = https://github.com/stm32duino/Arduino_Tools
+[submodule "STM8/src/Arduino_Core_STM8"]
+	path = STM8/src/Arduino_Core_STM8
+	url = https://github.com/stm32duino/Arduino_Core_STM8.git
+[submodule "STM8/src/Arduino_Tools_STM8"]
+	path = STM8/src/Arduino_Tools_STM8
+	url = https://github.com/stm32duino/Arduino_Tools_STM8.git
