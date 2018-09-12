@@ -6,21 +6,61 @@
       "websiteURL": "http://www.st.com/en/microcontrollers.html",
       "email": "",
       "help": {
-        "online": "http://www.stm32duino.com/"
+        "online": "https://github.com/stm32duino/Arduino_Core_STM8/blob/master/README.md"
       },
       "platforms": [
+	    {
+          "name": "STM8 Cores",
+          "architecture": "stm8",
+          "version": "0.1.0",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM8/packages/STM8-0.1.0.tar.bz2",
+          "archiveFileName": "STM8-0.1.0.tar.bz2",
+          "checksum": "SHA-256:4828751959f0e02fbccd5fc741d75b4ed2e70ee019fe0a7d2495e4e52a0aa263",
+          "size": "9552880",
+          "boards": [
+            {"name": "Nucleo_8S208RB"},
+            {"name": "Nucleo_8L152R8"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STM8",
+              "name": "cxppstm8",
+              "version": "4.1.3"
+            },
+            {
+              "packager": "STM8",
+              "name": "STM8Tools",
+              "version": "0.1.0"
+            }
+          ]
+        }
       ],
       "tools": [
+	    {
+          "name": "STM8Tools",
+          "version": "0.1.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM8/tools/STM8Tools-0.1.0-windows.tar.bz2",
+              "archiveFileName": "STM8Tools-0.1.0-windows.tar.bz2",
+              "checksum": "SHA-256:2930009559e4a73dad3a63976686f44caa1581d11dddcd6fd34fd0a21d1a0473",
+              "size": "6828225"
+            }
+          ]
+        },
         {
           "name": "cxppstm8",
-          "version": "4.1.1",
+          "version": "4.1.3",
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "http://cosmicsoftware.com/Arduino/cxppstm8.tar.bz2",
-              "archiveFileName": "cxppstm8.tar.bz2",
-              "checksum": "SHA-256:aac35551f128a0edb175ba89b12a992bfc707eceb3fcc205896c2a4872c66732",
-              "size": "29135748"
+              "url": "http://cosmicsoftware.com/Arduino/4.1.3/Cxppstm8.zip",
+              "archiveFileName": "Cxppstm8.zip",
+              "checksum": "SHA-256:1277e2ba80e744845ee55bb9088b206e324d401439ddd2956c13a4f418832dfe",
+              "size": "32363283"
             }
           ]
         }
