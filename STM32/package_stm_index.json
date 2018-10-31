@@ -463,7 +463,7 @@
           "architecture": "stm32",
           "version": "1.4.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/packages/STM32-1.4.0.tar.bz2",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/1.4.0/STM32-1.4.0.tar.bz2",
           "archiveFileName": "STM32-1.4.0.tar.bz2",
           "checksum": "SHA-256:59dfde3fbed67207148b10df5624813b48cf4c0681c4f9f2cae22edbb2bf8446",
           "size": "16981955",
@@ -838,28 +838,28 @@
           [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.2.0-windows.tar.bz2",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.0/STM32Tools-1.2.0-windows.tar.bz2",
               "archiveFileName": "STM32Tools-1.2.0-windows.tar.bz2",
               "checksum": "SHA-256:46f4df909a60445b814f6e2c1e73f535fe458304a2c1f054e3ae1b75fe866a59",
               "size": "10984553"
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.2.0-mac.tar.bz2",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.0/STM32Tools-1.2.0-mac.tar.bz2",
               "archiveFileName": "STM32Tools-1.2.0-mac.tar.bz2",
               "checksum": "SHA-256:0a241de5b12abdf9e0dd1f1bee8621ab7c341273b0c3322000297ce005827e97",
               "size": "765622"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.2.0-linux.tar.bz2",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.0/STM32Tools-1.2.0-linux.tar.bz2",
               "archiveFileName": "STM32Tools-1.2.0-linux.tar.bz2",
               "checksum": "SHA-256:252a22714d77283e39b5780b242e9073ecf27f791a62065fd018526c626581f9",
               "size": "1326482"
             },
             {
               "host": "i686-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/tools/STM32Tools-1.2.0-linux.tar.bz2",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.0/STM32Tools-1.2.0-linux.tar.bz2",
               "archiveFileName": "STM32Tools-1.2.0-linux.tar.bz2",
               "checksum": "SHA-256:252a22714d77283e39b5780b242e9073ecf27f791a62065fd018526c626581f9",
               "size": "1326482"
