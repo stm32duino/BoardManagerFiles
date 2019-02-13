@@ -520,6 +520,90 @@
               "version": "5.3.0"
             }
           ]
+        },
+        {
+          "name": "STM32 Cores",
+          "architecture": "stm32",
+          "version": "1.5.0",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/1.5.0/STM32-1.5.0.tar.bz2",
+          "archiveFileName": "STM32-1.5.0.tar.bz2",
+          "checksum": "SHA-256:09e2d0f2aa35e189331ac2ac13faca7ed926ff257a05f6520797ae2c57e5c78a",
+          "size": "18972644",
+          "boards": [
+            {"name": "Nucleo F207ZG"},
+            {"name": "Nucleo F429ZI"},
+            {"name": "Nucleo F767ZI"},
+            {"name": "Nucleo H743ZI"},
+            {"name": "Nucleo L496ZG"},
+            {"name": "Nucleo L496ZG-P"},
+            {"name": "Nucleo L4R5ZI"},
+            {"name": "Nucleo L4R5ZI-P"},
+            {"name": "Nucleo F030R8"},
+            {"name": "Nucleo F091RC"},
+            {"name": "Nucleo F103RB"},
+            {"name": "Nucleo F302R8"},
+            {"name": "Nucleo F303RE"},
+            {"name": "Nucleo F401RE"},
+            {"name": "Nucleo F411RE"},
+            {"name": "Nucleo F446RE"},
+            {"name": "Nucleo L053R8"},
+            {"name": "Nucleo L073RZ"},
+            {"name": "Nucleo L152RE"},
+            {"name": "Nucleo L452RE"},
+            {"name": "Nucleo L476RG"},
+            {"name": "Nucleo L031K6"},
+            {"name": "Nucleo L412KB"},
+            {"name": "Nucleo L432KC"},
+            {"name": "Nucleo F303K8"},
+            {"name": "STM32F030R8-DISCVL"},
+            {"name": "STM32F072B-DISCOVERY"},
+            {"name": "STM32F100RB-DISCVL"},
+            {"name": "STM32F407G-DISC1"},
+            {"name": "STM32F746G-DISCOVERY"},
+            {"name": "STM32L475VG-DISCOVERY-IOT"},
+            {"name": "Discovery L072CZ-LRWAN1"},
+            {"name": "STM32F030F4 Demo board"},
+            {"name": "BluePill F103C6 (32K)"},
+            {"name": "BluePill F103C8"},
+            {"name": "BluePill F103C8 (128k)"},
+            {"name": "BlackPill F103C8"},
+            {"name": "BlackPill F103C8 (128k)"},
+            {"name": "Maple Mini F103CB"},
+            {"name": "HY-TinySTM103TB"},
+            {"name": "Black F407VE"},
+            {"name": "Black F407VG"},
+            {"name": "Black F407ZE"},
+            {"name": "Black F407ZG"},
+            {"name": "Blue F407VE mini"},
+            {"name": "DIYMROE STM32F407VGT"},
+            {"name": "FK407M1 STM32F407VET"},
+            {"name": "RAK811 LoRa Tracker"},
+            {"name": "Armed V1"},
+            {"name": "RemRam v1"},
+            {"name": "RUMBA32"},
+            {"name": "PRNTR F407 v1"},
+            {"name": "EExtruder F030 V1"},
+            {"name": "Malyan M200 V1"},
+            {"name": "Malyan M200 V2"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STM32",
+              "name": "arm-none-eabi-gcc",
+              "version": "6-2017-q2-update"
+            },
+            {
+              "packager": "STM32",
+              "name": "STM32Tools",
+              "version": "1.2.1"
+            },
+            {
+              "packager": "STM32",
+              "name": "CMSIS",
+              "version": "5.3.0"
+            }
+          ]
         }
       ],
       "tools": [
@@ -863,6 +947,41 @@
               "archiveFileName": "STM32Tools-1.2.0-linux.tar.bz2",
               "checksum": "SHA-256:252a22714d77283e39b5780b242e9073ecf27f791a62065fd018526c626581f9",
               "size": "1326482"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "1.2.1",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.1/STM32Tools-1.2.1-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-1.2.1-windows.tar.bz2",
+              "checksum": "SHA-256:b4c83a965b88febe035e02b61ab0c5631e64f98718c00e3940a17683898f9a99",
+              "size": "10856955"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.1/STM32Tools-1.2.1-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-1.2.1-mac.tar.bz2",
+              "checksum": "SHA-256:52d162f11afcd0cec37d02106ace4d1e68bfe85633fe926094bcf8210f4d755a",
+              "size": "799691"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.1/STM32Tools-1.2.1-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.2.1-linux.tar.bz2",
+              "checksum": "SHA-256:ccd78966b4523966544676b119f918aa6d14ce8c2fb1ac2b9ea0e3a2e02693ad",
+              "size": "1350836"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.2.1/STM32Tools-1.2.1-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.2.1-linux.tar.bz2",
+              "checksum": "SHA-256:ccd78966b4523966544676b119f918aa6d14ce8c2fb1ac2b9ea0e3a2e02693ad",
+              "size": "1350836"
             }
           ]
         }
