@@ -685,7 +685,7 @@
             {
               "packager": "STM32",
               "name": "CMSIS",
-              "version": "5.4.0"
+              "version": "5.5.1"
             }
           ]
         }
@@ -761,50 +761,50 @@
         },
         {
           "name": "CMSIS",
-          "version": "5.4.0",
+          "version": "5.5.1",
           "systems":
           [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             },
             {
               "host": "i686-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             },
             {
               "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             },
             {
               "host": "all",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.4.0/CMSIS-5.4.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.4.0.tar.bz2",
-              "checksum": "SHA-256:f4725031f4c53baa3c93f4270af1ce147259f1e92da7b30951f279a884de7a84",
-              "size": "62126632"
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.5.1/CMSIS-5.5.1.tar.bz2",
+              "archiveFileName": "CMSIS-5.5.1.tar.bz2",
+              "checksum": "SHA-256:3dddbd241986fc7a7861a62c748abf350055ac4542d362f38f1778caad2c4bf8",
+              "size": "24351965"
             }
           ]
         },
