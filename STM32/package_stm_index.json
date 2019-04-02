@@ -675,7 +675,7 @@
             {
               "packager": "STM32",
               "name": "arm-none-eabi-gcc",
-              "version": "6-2017-q2-update"
+              "version": "8-2018-q4-major"
             },
             {
               "packager": "STM32",
@@ -691,6 +691,41 @@
         }
       ],
       "tools": [
+        {
+          "name": "arm-none-eabi-gcc",
+          "version": "8-2018-q4-major",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/arm-none-eabi-gcc/releases/download/8-2018-q4-major/gcc-arm-none-eabi-8-2018-q4-major-windows.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-windows.tar.bz2",
+              "checksum": "SHA-256:12e28bae974b3b270eb977cab28aa9a32928bba285fef45b2597acd06e385e37",
+              "size": "117135039"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/arm-none-eabi-gcc/releases/download/8-2018-q4-major/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "checksum": "SHA-256:d01fe94515515293529dbb145abfccc709576b80e866a0282bde69a81354f681",
+              "size": "112138851"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/arm-none-eabi-gcc/releases/download/8-2018-q4-major/gcc-arm-none-eabi-8-2018-q4-major-linux64.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux64.tar.bz2",
+              "checksum": "SHA-256:a765af2d887984d33c590a369c0c16aca1d49ac97962f6063ec5693a3db9e1fd",
+              "size": "107291807"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/arm-none-eabi-gcc/releases/download/8-2018-q4-major/gcc-arm-none-eabi-8-2018-q4-major-linux32.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux32.tar.bz2",
+              "checksum": "SHA-256:d321d3585b1c13a9adf8e4bff403d1348878b5756d40ec2d1fd3647e28664930",
+              "size": "105453401"
+            }
+          ]
+        },
         {
           "name": "arm-none-eabi-gcc",
           "version": "6-2017-q2-update",
