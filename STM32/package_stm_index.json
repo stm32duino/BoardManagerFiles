@@ -608,17 +608,18 @@
         {
           "name": "STM32 Cores",
           "architecture": "stm32",
-          "version": "1.6.0-dev",
+          "version": "1.6.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/1.5.0/STM32-1.5.0.tar.bz2",
-          "archiveFileName": "STM32-1.5.0.tar.bz2",
-          "checksum": "SHA-256:09e2d0f2aa35e189331ac2ac13faca7ed926ff257a05f6520797ae2c57e5c78a",
-          "size": "18972644",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/1.6.0/STM32-1.6.0.tar.bz2",
+          "archiveFileName": "STM32-1.6.0.tar.bz2",
+          "checksum": "SHA-256:540226e3f850ce1a805acfc6621493592e12584a50dcb3a07dcdb0e35301a261",
+          "size": "22038021",
           "boards": [
             {"name": "Nucleo F207ZG"},
             {"name": "Nucleo F429ZI"},
             {"name": "Nucleo F767ZI"},
             {"name": "Nucleo H743ZI"},
+            {"name": "Nucleo H743ZI2"},
             {"name": "Nucleo L496ZG"},
             {"name": "Nucleo L496ZG-P"},
             {"name": "Nucleo L4R5ZI"},
@@ -631,11 +632,13 @@
             {"name": "Nucleo F401RE"},
             {"name": "Nucleo F411RE"},
             {"name": "Nucleo F446RE"},
+            {"name": "Nucleo G071RB"},
             {"name": "Nucleo L053R8"},
             {"name": "Nucleo L073RZ"},
             {"name": "Nucleo L152RE"},
             {"name": "Nucleo L452RE"},
             {"name": "Nucleo L476RG"},
+            {"name": "P-Nucleo WB55RG"},
             {"name": "Nucleo L031K6"},
             {"name": "Nucleo L412KB"},
             {"name": "Nucleo L432KC"},
@@ -662,14 +665,18 @@
             {"name": "Blue F407VE mini"},
             {"name": "DIYMROE STM32F407VGT"},
             {"name": "FK407M1 STM32F407VET"},
-            {"name": "RAK811 LoRa Tracker"},
+            {"name": "Sparky V1"},
+            {"name": "RAK811 LoRa Tracker (16kb RAM)"},
+            {"name": "RAK811 LoRa Tracker (32kb RAM)"},
             {"name": "Armed V1"},
             {"name": "RemRam v1"},
             {"name": "RUMBA32"},
+            {"name": "STEVAL-3DP001V1"},
             {"name": "PRNTR F407 v1"},
             {"name": "EExtruder F030 V1"},
             {"name": "Malyan M200 V1"},
-            {"name": "Malyan M200 V2"}
+            {"name": "Malyan M200 V2"},
+            {"name": "VAkE v1.0"}
           ],
           "toolsDependencies": [
             {
@@ -680,7 +687,7 @@
             {
               "packager": "STM32",
               "name": "STM32Tools",
-              "version": "1.2.1"
+              "version": "1.3.0"
             },
             {
               "packager": "STM32",
@@ -1150,6 +1157,41 @@
               "archiveFileName": "STM32Tools-1.2.1-linux.tar.bz2",
               "checksum": "SHA-256:ccd78966b4523966544676b119f918aa6d14ce8c2fb1ac2b9ea0e3a2e02693ad",
               "size": "1350836"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "1.3.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.3.0/STM32Tools-1.3.0-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-1.3.0-windows.tar.bz2",
+              "checksum": "SHA-256:b0cfabf34904201264341b295143952e969df3f2ed0a0e70088bb99272405a25",
+              "size": "2571572"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.3.0/STM32Tools-1.3.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-1.3.0-mac.tar.bz2",
+              "checksum": "SHA-256:e66bc30f9df60eb436303613ef061233937d55451847a01b11d95be12fd62e39",
+              "size": "672710"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.3.0/STM32Tools-1.3.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.3.0-linux.tar.bz2",
+              "checksum": "SHA-256:8a887969173cd93a4189f7a4085cbdb8572ef160ac5bfad378010022c0614aa8",
+              "size": "813324"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/1.3.0/STM32Tools-1.3.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-1.3.0-linux.tar.bz2",
+              "checksum": "SHA-256:8a887969173cd93a4189f7a4085cbdb8572ef160ac5bfad378010022c0614aa8",
+              "size": "813324"
             }
           ]
         }
