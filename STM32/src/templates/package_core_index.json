@@ -14,7 +14,7 @@
             {
               "packager": "STM32",
               "name": "arm-none-eabi-gcc",
-              "version": "8-2018-q4-major"
+              "version": "8.2.1-1.7"
             },
             {
               "packager": "STM32",
