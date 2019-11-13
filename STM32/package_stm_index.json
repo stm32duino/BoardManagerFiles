@@ -6,7 +6,7 @@
       "maintainer": "STMicroelectronics",
       "email": "",
       "help": {
-        "online": "http://www.stm32duino.com/"
+        "online": "https://github.com/stm32duino/"
       },
       "platforms": [
         {
