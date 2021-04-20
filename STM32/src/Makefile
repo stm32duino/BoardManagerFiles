@@ -44,7 +44,6 @@ core: clean print_info
 	@echo ----------------------------------------------------------
 	@echo "Packaging $@..."
 	@git --git-dir=$(PACKAGE_FOLDER)/.git show HEAD --pretty=short --no-patch  > $(PACKAGE_FOLDER)/package_version.txt
-	@sed -i 's/{runtime.hardware.path}\/tools/{runtime.tools.STM32Tools.path}\/tools/g' $(PACKAGE_FOLDER)/platform.txt
 	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
 		--exclude=.gitattributes \
@@ -73,7 +72,7 @@ tools: clean print_info
 		--exclude=linux \
 		--exclude=linux64 \
 		--exclude=macosx \
-		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
+		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-windows.tar.bz2" "$(PACKAGE_FOLDER)"
 	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
@@ -82,7 +81,7 @@ tools: clean print_info
 		--exclude=.gitignore \
 		--exclude=macosx \
 		--exclude=win \
-		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
+		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-linux.tar.bz2" "$(PACKAGE_FOLDER)"
 	@tar --mtime='$(PACKAGE_DATE)' \
 		--exclude=.git \
@@ -92,7 +91,7 @@ tools: clean print_info
 		--exclude=linux \
 		--exclude=linux64 \
 		--exclude=win \
-		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
+		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-mac.tar.bz2" "$(PACKAGE_FOLDER)"
 	@-$(RM) $(PACKAGE_FOLDER)/package_version.txt
 	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_tools -C .
