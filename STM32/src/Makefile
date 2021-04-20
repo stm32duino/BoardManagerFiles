@@ -119,7 +119,7 @@ postpackaging_core:
 	@echo "PACKAGE_CHKSUM      = $(PACKAGE_CHKSUM)"
 	@echo "PACKAGE_SIZE        = $(PACKAGE_SIZE)"
 	@echo "PACKAGE_FILENAME    = $(PACKAGE_FILENAME)"
-	@BOARDS_LIST=`grep -E ".+\.menu\.pnum\.[^\.]+=" $(PACKAGE_FOLDER)/boards.txt | cut -d'=' -f2 | awk '{print "            {\"name\": \""$$0"\"},"}'`; \
+	@BOARDS_LIST=`grep -E "^[^\.]+\.name=" $(PACKAGE_FOLDER)/boards.txt | cut -d'=' -f2 | awk '{print "            {\"name\": \""$$0"\"},"}'`; \
 	BOARDS_LIST=$${BOARDS_LIST::-1}; \
 	cat templates/package_core_index.json | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAME%%/$(PACKAGE_FILENAME)/ | sed s/%%CHECKSUM%%/$(PACKAGE_CHKSUM)/ | sed s/%%SIZE%%/$(PACKAGE_SIZE)/ | sed -e "s/%%BOARDSLIST%%/$${BOARDS_LIST//$$'\n'/\\n}/" > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@mv $(PACKAGE_FILENAME) $(CORE_PATH)/
