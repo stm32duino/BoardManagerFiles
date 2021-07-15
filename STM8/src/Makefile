@@ -58,7 +58,7 @@ tools: clean print_info
 		--exclude=.gitattributes \
 		--exclude=.github \
 		--exclude=.gitignore \
-		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)/tools|" \
+		--transform "s|$(PACKAGE_FOLDER)|$(PACKAGE_NAME)|" \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION)-windows.tar.bz2" "$(PACKAGE_FOLDER)"
 	@-$(RM) $(PACKAGE_FOLDER)/package_version.txt
 	"$(MAKE)" PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_tools -C .
