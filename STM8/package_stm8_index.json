@@ -13,6 +13,7 @@
           "name": "[DEPRECATED - Please use new package index] STM8 Cores",
           "architecture": "stm8",
           "version": "0.1.0",
+          "deprecated": true,
           "category": "Contributed",
           "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM8/packages/STM8-0.1.0.tar.bz2",
           "archiveFileName": "STM8-0.1.0.tar.bz2",
