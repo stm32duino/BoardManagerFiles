@@ -10,7 +10,7 @@
       },
       "platforms": [
 	    {
-          "name": "STM8 Cores",
+          "name": "[DEPRECATED - Please use new package index] STM8 Cores",
           "architecture": "stm8",
           "version": "0.1.0",
           "category": "Contributed",
@@ -19,8 +19,7 @@
           "checksum": "SHA-256:4828751959f0e02fbccd5fc741d75b4ed2e70ee019fe0a7d2495e4e52a0aa263",
           "size": "9552880",
           "boards": [
-            {"name": "Nucleo_8S208RB"},
-            {"name": "Nucleo_8L152R8"}
+            {"name": "[DEPRECATED] Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/master/package_stmicroelectronics_index.json"}
           ],
           "toolsDependencies": [
             {
