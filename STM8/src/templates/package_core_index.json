@@ -1,9 +1,9 @@
         {
-          "name": "STM8 Cores",
+          "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "%%VERSION%%",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/BoardManagerFiles/raw/master/STM8/packages/%%FILENAME%%",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM8/releases/download/%%VERSION%%/%%FILENAME%%",
           "archiveFileName": "%%FILENAME%%",
           "checksum": "SHA-256:%%CHECKSUM%%",
           "size": "%%SIZE%%",
@@ -19,7 +19,7 @@
             {
               "packager": "STM8",
               "name": "STM8Tools",
-              "version": "1.0.2"
+              "version": "1.0.0"
             }
           ]
         }
