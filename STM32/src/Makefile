@@ -53,7 +53,7 @@ core: clean print_info
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
 	@-$(RM) $(PACKAGE_FOLDER)/package_version.txt
 	@git --git-dir=$(PACKAGE_FOLDER)/.git checkout .
-	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) PACKAGE_FOLDER="$(PACKAGE_FOLDER)" --no-builtin-rules postpackaging_core -C .
+	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) PACKAGE_FOLDER=$(PACKAGE_FOLDER) --no-builtin-rules postpackaging_core -C .
 	@echo ----------------------------------------------------------
 
 tools: PACKAGE_NAME := STM32Tools
