@@ -10,41 +10,17 @@
       },
       "platforms": [
         {
-          "name": "STM32 MCU based boards",
+          "name": "[DEPRECATED - Please use new package index on main branch] STM32 MCU based boards",
           "architecture": "stm32",
           "version": "2.0.0",
+          "deprecated": true,
           "category": "Contributed",
           "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.0.0/STM32-2.0.0.tar.bz2",
           "archiveFileName": "STM32-2.0.0.tar.bz2",
           "checksum": "SHA-256:31e7a98afdc595335acbd111b39563350eb63bd0bcd005aebbe6fe1f8bad26fe",
           "size": "38496810",
           "boards": [
-            {"name": "Nucleo-144"},
-            {"name": "Nucleo-64"},
-            {"name": "Nucleo-32"},
-            {"name": "Discovery"},
-            {"name": "Eval"},
-            {"name": "STM32MP1 series coprocessor"},
-            {"name": "Generic STM32F0 series"},
-            {"name": "Generic STM32F1 series"},
-            {"name": "Generic STM32F2 series"},
-            {"name": "Generic STM32F3 series"},
-            {"name": "Generic STM32F4 series"},
-            {"name": "Generic STM32F7 series"},
-            {"name": "Generic STM32G0 series"},
-            {"name": "Generic STM32G4 series"},
-            {"name": "Generic STM32H7 Series"},
-            {"name": "Generic STM32L0 series"},
-            {"name": "Generic STM32L1 series"},
-            {"name": "Generic STM32L4 series"},
-            {"name": "Generic STM32L5 series"},
-            {"name": "Generic STM32WB series"},
-            {"name": "Electronic speed controllers"},
-            {"name": "LoRa boards"},
-            {"name": "3D printer boards"},
-            {"name": "Generic Flight Controllers"},
-            {"name": "Garatronic-McHobby"},
-            {"name": "Midatronics boards"}
+            {"name": "DEPRECATED - Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json"}
           ],
           "toolsDependencies": [
             {
@@ -65,45 +41,17 @@
           ]
         },
         {
-          "name": "STM32 MCU based boards",
+          "name": "[DEPRECATED - Please use new package index on main branch] STM32 MCU based boards",
           "architecture": "stm32",
           "version": "2.1.0",
+          "deprecated": true,
           "category": "Contributed",
           "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.1.0/STM32-2.1.0.tar.bz2",
           "archiveFileName": "STM32-2.1.0.tar.bz2",
           "checksum": "SHA-256:154f781f890443385b3cf68a606cae4a67cb42c7ee7b3cda7171f333cbcb4745",
           "size": "41172157",
           "boards": [
-            {"name": "Nucleo-144"},
-            {"name": "Nucleo-64"},
-            {"name": "Nucleo-32"},
-            {"name": "Discovery"},
-            {"name": "Eval"},
-            {"name": "STM32MP1 series coprocessor"},
-            {"name": "Generic STM32F0 series"},
-            {"name": "Generic STM32F1 series"},
-            {"name": "Generic STM32F2 series"},
-            {"name": "Generic STM32F3 series"},
-            {"name": "Generic STM32F4 series"},
-            {"name": "Generic STM32F7 series"},
-            {"name": "Generic STM32G0 series"},
-            {"name": "Generic STM32G4 series"},
-            {"name": "Generic STM32H7 Series"},
-            {"name": "Generic STM32L0 series"},
-            {"name": "Generic STM32L1 series"},
-            {"name": "Generic STM32L4 series"},
-            {"name": "Generic STM32L5 series"},
-            {"name": "Generic STM32U5 series"},
-            {"name": "Generic STM32WB series"},
-            {"name": "Generic STM32WL series"},
-            {"name": "3D printer boards"},
-            {"name": "Blues Wireless boards"},
-            {"name": "Elecgator boards"},
-            {"name": "Electronic speed controllers"},
-            {"name": "Garatronic-McHobby"},
-            {"name": "Generic Flight Controllers"},
-            {"name": "LoRa boards"},
-            {"name": "Midatronics boards"}
+            {"name": "DEPRECATED - Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json"}
           ],
           "toolsDependencies": [
             {
@@ -124,17 +72,17 @@
           ]
         },
         {
-          "name": "STM8 MCU based boards",
+          "name": "[DEPRECATED - Please use new package index on main branch] STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
+          "deprecated": true,
           "category": "Contributed",
           "url": "https://github.com/stm32duino/Arduino_Core_STM8/releases/download/1.0.0/STM8-1.0.0.tar.bz2",
           "archiveFileName": "STM8-1.0.0.tar.bz2",
           "checksum": "SHA-256:f38055bfd8199feea66f02a3a25405d07aa3635f57b2adf15e93112b2d556584",
           "size": "374456",
           "boards": [
-            {"name": "Nucleo_8S208RB"},
-            {"name": "Nucleo_8L152R8"}
+            {"name": "DEPRECATED - Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json"}
           ],
           "toolsDependencies": [
             {
