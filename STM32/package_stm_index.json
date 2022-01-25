@@ -4,7 +4,7 @@
       "name": "STM32",
       "websiteURL": "http://www.st.com/en/microcontrollers.html",
       "maintainer": "STMicroelectronics",
-      "email": "",
+      "email": "stmduino@st.com",
       "help": {
         "online": "http://www.stm32duino.com/"
       },
