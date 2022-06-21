@@ -14,12 +14,12 @@
             {
               "packager": "STMicroelectronics",
               "name": "xpack-arm-none-eabi-gcc",
-              "version": "10.2.1-1.1"
+              "version": "10.3.1-2.3"
             },
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.1.0"
+              "version": "2.1.1"
             },
             {
               "packager": "STMicroelectronics",
