@@ -301,6 +301,65 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "2.5.0-dev",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.4.0/STM32-2.4.0.tar.bz2",
+          "archiveFileName": "STM32-2.4.0.tar.bz2",
+          "checksum": "SHA-256:f6797845516c459f166b451d439d003b15cb8681da6e5d53830c451d80ae3753",
+          "size": "42338079",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues Wireless boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "12.2.1-1.2"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "5.7.0"
+            }
+          ]
+        },
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -472,6 +531,48 @@
               "archiveFileName": "xpack-arm-none-eabi-gcc-10.3.1-2.3-linux-ia32.tar.gz",
               "checksum": "SHA-256:8a6621590ac2f0b33fc71f1c501af6b60e900fc3d895a11f20de850cd4f55ca3",
               "size": "179184840"
+            }
+          ]
+        },
+        {
+          "name": "xpack-arm-none-eabi-gcc",
+          "version": "12.2.1-1.2",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v12.2.1-1.2/xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-arm.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-arm.tar.gz",
+              "checksum": "SHA-256:92eee346b6672776169143154c931c3a5779fd171c1976d495e7eb31796692d5",
+              "size": "222530061"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v12.2.1-1.2/xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-arm64.tar.gz",
+              "checksum": "SHA-256:dbf5e36b20f236ead98c6c24daaeafb5ed8b9a7be76895f5e0c7b79cb2b90073",
+              "size": "229675672"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v12.2.1-1.2/xpack-arm-none-eabi-gcc-12.2.1-1.2-win32-x64.zip",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-12.2.1-1.2-win32-x64.zip",
+              "checksum": "SHA-256:5662a2d95bd5b28d24797709864fa8e1379a3bd103112f3c96a6c16db1e2e44a",
+              "size": "259513877"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v12.2.1-1.2/xpack-arm-none-eabi-gcc-12.2.1-1.2-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-12.2.1-1.2-darwin-x64.tar.gz",
+              "checksum": "SHA-256:5b4d2d3c6b258b275eee06a3437b9f04480957e8415c6c9f00b56a7cc5f2c01f",
+              "size": "227358409"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v12.2.1-1.2/xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-x64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-12.2.1-1.2-linux-x64.tar.gz",
+              "checksum": "SHA-256:65b52009ff1b7f22f5e030cc04e17e5e7d7f2436a62488aca905062a71d3944c",
+              "size": "232443193"
             }
           ]
         },
