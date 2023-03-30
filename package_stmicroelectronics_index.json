@@ -301,6 +301,71 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "2.5.0",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.5.0/STM32-2.5.0.tar.bz2",
+          "archiveFileName": "STM32-2.5.0.tar.bz2",
+          "checksum": "SHA-256:31fa78777834e869bd488e34e53c47a03f0f3dd6c63a3a2c5e0039d0baa8fcb1",
+          "size": "43417522",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues Wireless boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "12.2.1-1.2"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.2.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "5.7.0"
+            }
+          ]
+        },
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -710,6 +775,41 @@
               "archiveFileName": "STM32Tools-2.1.1-linux.tar.bz2",
               "checksum": "SHA-256:35ecc3914e8a0a45de229111cc45b8cb39a8e0a8c66313562fd51977a7ab3dee",
               "size": "480360"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "2.2.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.0/STM32Tools-2.2.0-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.0-windows.tar.bz2",
+              "checksum": "SHA-256:c8bd87064f5a6f018a6b88f539af2fce864452b70d95b8ae3b0a95b48cf766ec",
+              "size": "2342829"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.0/STM32Tools-2.2.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.0-mac.tar.bz2",
+              "checksum": "SHA-256:3974c0d4e491ccf4f67e2198ec95f7553471aaa7d0f4a6b82a6beb1aff4bdc86",
+              "size": "149541"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.0/STM32Tools-2.2.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.0-linux.tar.bz2",
+              "checksum": "SHA-256:e436bf62709abd74a179811459aa83ee0cc163c1b10f5b10831e3cb57bee3000",
+              "size": "270078"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.0/STM32Tools-2.2.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.0-linux.tar.bz2",
+              "checksum": "SHA-256:e436bf62709abd74a179811459aa83ee0cc163c1b10f5b10831e3cb57bee3000",
+              "size": "270078"
             }
           ]
         },
