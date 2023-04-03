@@ -611,8 +611,8 @@
             {
               "host": "x86_64-apple-darwin",
               "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-darwin-x64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-1-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:db4b501a059944551365ee6f6dad95f5a7d0808654939f747c167c5da743fdb7",
+              "archiveFileName": "xpack-openocd-0.12.0-1-darwin-x64.tar.gz",
+              "checksum": "SHA-256:ca569b6bfd9b3cd87a5bc88b3a33a5c4fe854be3cf95a3dcda1c194e8da9d7bb",
               "size": "2292519"
             },
             {
