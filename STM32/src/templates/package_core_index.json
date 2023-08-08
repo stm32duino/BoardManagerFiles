@@ -29,7 +29,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "CMSIS",
-              "version": "5.7.0"
+              "version": "5.9.0"
             }
           ]
         }
