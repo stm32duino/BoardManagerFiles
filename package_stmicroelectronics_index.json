@@ -828,6 +828,48 @@
           ]
         },
         {
+          "name": "xpack-openocd",
+          "version": "0.12.0-2",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-2/xpack-openocd-0.12.0-2-linux-arm.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-2-linux-arm.tar.gz",
+              "checksum": "SHA-256:bc123785e9009caa6ce166afb4298104a19c20f734ae044f3caf37896d401a45",
+              "size": "2451490"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-2/xpack-openocd-0.12.0-2-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-2-linux-arm64.tar.gz",
+              "checksum": "SHA-256:d4fad1505ef299f511eb2324c6e2c7bbef1101a22155b70478d89428c3fb515b",
+              "size": "2529589"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-2/xpack-openocd-0.12.0-2-win32-x64.zip",
+              "archiveFileName": "xpack-openocd-0.12.0-2-win32-x64.zip",
+              "checksum": "SHA-256:6cb8a5f9290c59be3e42a6f1066f23ff5a9dbe5b83bdecd0e9d4c7dcc1233517",
+              "size": "2990739"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-2/xpack-openocd-0.12.0-2-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-2-darwin-x64.tar.gz",
+              "checksum": "SHA-256:71942e8db55ed68cad45e07c2065e6c7cc0e127797ee26c298ec4dcaebc9232c",
+              "size": "2289633"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-2/xpack-openocd-0.12.0-2-linux-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-2-linux-x64.tar.gz",
+              "checksum": "SHA-256:1dc8e63694204b73107fe5b23267238af2c6ce14726e4aa244a2123a98805335",
+              "size": "2581203"
+            }
+          ]
+        },
+        {
           "name": "CMSIS",
           "version": "5.7.0",
           "systems":
