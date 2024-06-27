@@ -4,3 +4,6 @@
 [submodule "STM32/src/Arduino_Tools"]
 	path = STM32/src/Arduino_Tools
 	url = https://github.com/stm32duino/Arduino_Tools
+[submodule "STM32/src/stm32_svd"]
+	path = STM32/src/stm32_svd
+	url = https://github.com/stm32duino/stm32_svd.git
