@@ -30,11 +30,17 @@ ifeq (postpackaging_tools,$(findstring $(MAKECMDGOALS),postpackaging_tools))
   PACKAGE_MAC_SIZE := $(firstword $(shell wc -c "$(PACKAGE_MAC_FILENAME)"))
 endif
 
+ifeq (postpackaging_svd,$(findstring $(MAKECMDGOALS),postpackaging_svd))
+  PACKAGE_FILENAME=$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2
+  PACKAGE_CHKSUM := $(firstword $(shell shasum -a 256 "$(PACKAGE_FILENAME)"))
+  PACKAGE_SIZE := $(firstword $(shell wc -c "$(PACKAGE_FILENAME)"))
+endif
+
 # -----------------------------------------------------------------------------
 
-.PHONY: all clean tools print_info postpackaging
+.PHONY: all clean core tools stm32_svd print_info postpackaging_core postpackaging_svd postpackaging_tools
 
-all: core tools
+all: core tools stm32_svd
 
 core: PACKAGE_NAME := STM32
 core: PACKAGE_FOLDER := Arduino_Core_STM32
@@ -97,6 +103,19 @@ tools: clean print_info
 	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_tools -C .
 	@echo ----------------------------------------------------------
 
+stm32_svd: PACKAGE_NAME := STM32_SVD
+stm32_svd: PACKAGE_FOLDER := stm32_svd
+stm32_svd: PACKAGE_VERSION := $(shell git --git-dir=$(PACKAGE_FOLDER)/.git describe --tags)
+stm32_svd: PACKAGE_DATE := $(firstword $(shell git --git-dir=$(PACKAGE_FOLDER)/.git log -1 --pretty=format:%ci))
+stm32_svd: clean print_info
+	@echo ----------------------------------------------------------
+	@echo "Packaging module."
+	@tar --mtime='$(PACKAGE_DATE)' \
+		--absolute-names \
+		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
+	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_svd -C .
+	@echo ----------------------------------------------------------
+
 clean:
 	@echo ----------------------------------------------------------
 	@echo  Cleanup
@@ -137,4 +156,11 @@ postpackaging_tools:
 	@echo "PACKAGE_MAC_CHKSUM      = $(PACKAGE_MAC_CHKSUM)"
 	@cat templates/package_tools_index.json | sed s/%%PACKAGENAME%%/$(PACKAGE_NAME)/ | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAMEWIN%%/$(PACKAGE_WIN_FILENAME)/ | sed s/%%CHECKSUMWIN%%/$(PACKAGE_WIN_CHKSUM)/ | sed s/%%SIZEWIN%%/$(PACKAGE_WIN_SIZE)/ | sed s/%%FILENAMEMAC%%/$(PACKAGE_MAC_FILENAME)/ | sed s/%%CHECKSUMMAC%%/$(PACKAGE_MAC_CHKSUM)/ | sed s/%%SIZEMAC%%/$(PACKAGE_MAC_SIZE)/ | sed s/%%FILENAMELINUX%%/$(PACKAGE_LINUX_FILENAME)/ | sed s/%%CHECKSUMLINUX%%/$(PACKAGE_LINUX_CHKSUM)/ | sed s/%%SIZELINUX%%/$(PACKAGE_LINUX_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@mv $(PACKAGE_WIN_FILENAME) $(PACKAGE_LINUX_FILENAME) $(PACKAGE_MAC_FILENAME) $(TOOLS_PATH)/
+	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
+
+postpackaging_svd:
+	@echo "PACKAGE_CHKSUM      = $(PACKAGE_CHKSUM)"
+	@echo "PACKAGE_SIZE        = $(PACKAGE_SIZE)"
+	@echo "PACKAGE_FILENAME    = $(PACKAGE_FILENAME)"
+	@cat templates/package_svd_index.json | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAME%%/$(PACKAGE_FILENAME)/ | sed s/%%CHECKSUM%%/$(PACKAGE_CHKSUM)/ | sed s/%%SIZE%%/$(PACKAGE_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"

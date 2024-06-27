@@ -1,0 +1,14 @@
+        {
+          "name": "STM32_SVD",
+          "version": "%%VERSION%%",
+          "systems":
+          [
+            {
+              "host": "all",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            }
+          ]
+        }
