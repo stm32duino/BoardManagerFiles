@@ -571,12 +571,12 @@
         {
           "name": "STM32 MCU based boards",
           "architecture": "stm32",
-          "version": "2.8.0-dev",
+          "version": "2.8.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.7.1/STM32-2.7.1.tar.bz2",
-          "archiveFileName": "STM32-2.7.1.tar.bz2",
-          "checksum": "SHA-256:8b2adbc9ca4a58130bba5023448fddd60df302fce179de2453bdd767438ca70c",
-          "size": "46994475",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.8.0/STM32-2.8.0.tar.bz2",
+          "archiveFileName": "STM32-2.8.0.tar.bz2",
+          "checksum": "SHA-256:ec59dd9cc814314d5508abdf238c0a85fa2f2a5e625ce5b270eb3a444397c10f",
+          "size": "48545289",
           "boards": [
             {"name": "Nucleo-144"},
             {"name": "Nucleo-64"},
@@ -601,9 +601,10 @@
             {"name": "Generic STM32L5 series"},
             {"name": "Generic STM32U5 series"},
             {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WBA series"},
             {"name": "Generic STM32WL series"},
             {"name": "3D printer boards"},
-            {"name": "Blues Wireless boards"},
+            {"name": "Blues boards"},
             {"name": "Elecgator boards"},
             {"name": "Electronic speed controllers"},
             {"name": "Garatronic-McHobby"},
@@ -611,7 +612,8 @@
             {"name": "IoT continuum boards"},
             {"name": "LoRa boards"},
             {"name": "Midatronics boards"},
-            {"name": "SparkFun Boards"}
+            {"name": "SparkFun Boards"},
+            {"name": "ELV Modular System boards"}
           ],
           "toolsDependencies": [
             {
@@ -627,12 +629,17 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.2.1"
+              "version": "2.2.2"
             },
             {
               "packager": "STMicroelectronics",
               "name": "CMSIS",
               "version": "5.9.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.15.1"
             }
           ]
         },
@@ -1249,6 +1256,55 @@
               "archiveFileName": "STM32Tools-2.2.1-linux.tar.bz2",
               "checksum": "SHA-256:5b291f2b6384270fe84e4a47838a2b561351459d68331f40c08930a462ced174",
               "size": "277972"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "2.2.2",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.2/STM32Tools-2.2.2-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.2-windows.tar.bz2",
+              "checksum": "SHA-256:44469dda9cf3b962a9d1286fc6cba759685709801e81ea31342eab4d3dbe0421",
+              "size": "2423233"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.2/STM32Tools-2.2.2-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.2-mac.tar.bz2",
+              "checksum": "SHA-256:4cde739afe7ecd74cfc8021936cbfce7802b1f56fc5774bab3e367344705b502",
+              "size": "103531"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.2/STM32Tools-2.2.2-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.2-linux.tar.bz2",
+              "checksum": "SHA-256:6ef5e1e6e58c95ce6a62725eb8eb16f799ebb88ac9677a4967257c214a1f145b",
+              "size": "157362"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.2/STM32Tools-2.2.2-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.2-linux.tar.bz2",
+              "checksum": "SHA-256:6ef5e1e6e58c95ce6a62725eb8eb16f799ebb88ac9677a4967257c214a1f145b",
+              "size": "157362"
+            }
+          ]
+        },
+        {
+          "name": "STM32_SVD",
+          "version": "1.15.1",
+          "systems":
+          [
+            {
+              "host": "all",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
+              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
+              "size": "12998735"
             }
           ]
         },
