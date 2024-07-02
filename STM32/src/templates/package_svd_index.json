@@ -4,7 +4,35 @@
           "systems":
           [
             {
-              "host": "all",
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/%%VERSION%%/%%FILENAME%%",
               "archiveFileName": "%%FILENAME%%",
               "checksum": "SHA-256:%%CHECKSUM%%",

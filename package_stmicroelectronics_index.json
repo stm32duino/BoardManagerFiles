@@ -1025,13 +1025,6 @@
               "archiveFileName": "CMSIS-5.7.0.tar.bz2",
               "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
               "size": "26151901"
-            },
-            {
-              "host": "all",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
-              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
-              "size": "26151901"
             }
           ]
         },
@@ -1070,13 +1063,6 @@
             },
             {
               "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.9.0.tar.bz2",
-              "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
-              "size": "2365397"
-            },
-            {
-              "host": "all",
               "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
               "archiveFileName": "CMSIS-5.9.0.tar.bz2",
               "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
@@ -1300,7 +1286,35 @@
           "systems":
           [
             {
-              "host": "all",
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
+              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
+              "size": "12998735"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
+              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
+              "size": "12998735"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
+              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
+              "size": "12998735"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
+              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
+              "size": "12998735"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
               "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
               "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
