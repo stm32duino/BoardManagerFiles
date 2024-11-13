@@ -719,6 +719,81 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "2.9.0-dev",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.8.1/STM32-2.8.1.tar.bz2",
+          "archiveFileName": "STM32-2.8.1.tar.bz2",
+          "checksum": "SHA-256:92b175dbb2a23d9d8ee4373f66d7517cd4df3f424dea77739882160f14862074",
+          "size": "48552144",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H5 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WBA series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "IoT continuum boards"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"},
+            {"name": "SparkFun Boards"},
+            {"name": "ELV Modular System boards"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "13.2.1-1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-3"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.2.3"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "5.9.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.16.0"
+            }
+          ]
+        },
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -1429,6 +1504,48 @@
               "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
               "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
               "size": "12998735"
+            }
+          ]
+        },
+        {
+          "name": "STM32_SVD",
+          "version": "1.16.0",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
             }
           ]
         },
