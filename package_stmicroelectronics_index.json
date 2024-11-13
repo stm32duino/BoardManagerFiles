@@ -774,7 +774,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "xpack-openocd",
-              "version": "0.12.0-3"
+              "version": "0.12.0-4"
             },
             {
               "packager": "STMicroelectronics",
@@ -1133,6 +1133,48 @@
               "archiveFileName": "xpack-openocd-0.12.0-3-linux-x64.tar.gz",
               "checksum": "SHA-256:98c07aa34c6e02ac6ef0794494bc3bd9e2409d587723c5191ee4f0a4d179e39b",
               "size": "2607063"
+            }
+          ]
+        },
+        {
+          "name": "xpack-openocd",
+          "version": "0.12.0-4",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm.tar.gz",
+              "checksum": "SHA-256:a530ca8bb571e0e97dee8d959c53b5824206079fbd3e934e440daa51744a540e",
+              "size": "2493684"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
+              "checksum": "SHA-256:75c6fa54112c8ec896ef9e4e83d0790a27d01c543d8f0378cfeeb53cdc418ab2",
+              "size": "2571961"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-win32-x64.zip",
+              "archiveFileName": "xpack-openocd-0.12.0-4-win32-x64.zip",
+              "checksum": "SHA-256:a9839185b0bd85351bbd66fc227458a23a5d642ab329871103c1f50ed2aef88a",
+              "size": "3060423"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
+              "checksum": "SHA-256:07d4a1443fa06552b9c15cc2d6b837c2bc22e4f85fc8e071e884a0b3cffe03c7",
+              "size": "2344148"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-x64.tar.gz",
+              "checksum": "SHA-256:7bf7dcb87b0401f286d67814e56001cd202108062361b89162a86a1864918717",
+              "size": "2621027"
             }
           ]
         },
