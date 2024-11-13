@@ -111,6 +111,7 @@ stm32_svd: clean print_info
 	@echo ----------------------------------------------------------
 	@echo "Packaging module."
 	@tar --mtime='$(PACKAGE_DATE)' \
+		--exclude=.git \
 		--absolute-names \
 		-cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
 	$(MAKE) PACKAGE_NAME=$(PACKAGE_NAME) PACKAGE_VERSION=$(PACKAGE_VERSION) --no-builtin-rules postpackaging_svd -C .
