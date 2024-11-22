@@ -719,6 +719,81 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "2.9.0-dev",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.8.1/STM32-2.8.1.tar.bz2",
+          "archiveFileName": "STM32-2.8.1.tar.bz2",
+          "checksum": "SHA-256:92b175dbb2a23d9d8ee4373f66d7517cd4df3f424dea77739882160f14862074",
+          "size": "48552144",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H5 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WBA series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "IoT continuum boards"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"},
+            {"name": "SparkFun Boards"},
+            {"name": "ELV Modular System boards"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "13.2.1-1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-4"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.2.3"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "5.9.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.16.0"
+            }
+          ]
+        },
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -1058,6 +1133,48 @@
               "archiveFileName": "xpack-openocd-0.12.0-3-linux-x64.tar.gz",
               "checksum": "SHA-256:98c07aa34c6e02ac6ef0794494bc3bd9e2409d587723c5191ee4f0a4d179e39b",
               "size": "2607063"
+            }
+          ]
+        },
+        {
+          "name": "xpack-openocd",
+          "version": "0.12.0-4",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm.tar.gz",
+              "checksum": "SHA-256:a530ca8bb571e0e97dee8d959c53b5824206079fbd3e934e440daa51744a540e",
+              "size": "2493684"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
+              "checksum": "SHA-256:75c6fa54112c8ec896ef9e4e83d0790a27d01c543d8f0378cfeeb53cdc418ab2",
+              "size": "2571961"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-win32-x64.zip",
+              "archiveFileName": "xpack-openocd-0.12.0-4-win32-x64.zip",
+              "checksum": "SHA-256:a9839185b0bd85351bbd66fc227458a23a5d642ab329871103c1f50ed2aef88a",
+              "size": "3060423"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
+              "checksum": "SHA-256:07d4a1443fa06552b9c15cc2d6b837c2bc22e4f85fc8e071e884a0b3cffe03c7",
+              "size": "2344148"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-linux-x64.tar.gz",
+              "checksum": "SHA-256:7bf7dcb87b0401f286d67814e56001cd202108062361b89162a86a1864918717",
+              "size": "2621027"
             }
           ]
         },
@@ -1429,6 +1546,48 @@
               "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
               "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
               "size": "12998735"
+            }
+          ]
+        },
+        {
+          "name": "STM32_SVD",
+          "version": "1.16.0",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
+              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
+              "size": "13758007"
             }
           ]
         },
