@@ -721,12 +721,12 @@
         {
           "name": "STM32 MCU based boards",
           "architecture": "stm32",
-          "version": "2.9.0-dev",
+          "version": "2.9.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.8.1/STM32-2.8.1.tar.bz2",
-          "archiveFileName": "STM32-2.8.1.tar.bz2",
-          "checksum": "SHA-256:92b175dbb2a23d9d8ee4373f66d7517cd4df3f424dea77739882160f14862074",
-          "size": "48552144",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.9.0/STM32-2.9.0.tar.bz2",
+          "archiveFileName": "STM32-2.9.0.tar.bz2",
+          "checksum": "SHA-256:3bc31ff4ff579e9c8cb35a92f19d03efe0639097d0fdcd10f2ef64eef623515c",
+          "size": "49959520",
           "boards": [
             {"name": "Nucleo-144"},
             {"name": "Nucleo-64"},
@@ -749,6 +749,7 @@
             {"name": "Generic STM32L1 series"},
             {"name": "Generic STM32L4 series"},
             {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U0 series"},
             {"name": "Generic STM32U5 series"},
             {"name": "Generic STM32WB series"},
             {"name": "Generic STM32WBA series"},
@@ -763,7 +764,8 @@
             {"name": "LoRa boards"},
             {"name": "Midatronics boards"},
             {"name": "SparkFun Boards"},
-            {"name": "ELV Modular System boards"}
+            {"name": "ELV Modular System boards"},
+            {"name": "STeaMi Board"}
           ],
           "toolsDependencies": [
             {
@@ -779,7 +781,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.2.3"
+              "version": "2.2.4"
             },
             {
               "packager": "STMicroelectronics",
@@ -1504,6 +1506,41 @@
               "archiveFileName": "STM32Tools-2.2.3-linux.tar.bz2",
               "checksum": "SHA-256:edd142d2caade2265059f83e79505b06f9378b720393640a30e99f77d8e0555b",
               "size": "157436"
+            }
+          ]
+        },
+        {
+          "name": "STM32Tools",
+          "version": "2.2.4",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.4-windows.tar.bz2",
+              "checksum": "SHA-256:7deb8dc135d1502b486bd9b63f30051d4ae86486591db2cdcd7af221a783b4b6",
+              "size": "2423028"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.4-mac.tar.bz2",
+              "checksum": "SHA-256:3af40861b527e3323ce284dc88f6990e581691e56c6f98dfd3687cef4cbb4310",
+              "size": "103686"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.4-linux.tar.bz2",
+              "checksum": "SHA-256:6ebdc25c1fb7fc1d4f2509db82a6bd617e0b9307cb9192994db7184a8f6e209c",
+              "size": "157477"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.2.4-linux.tar.bz2",
+              "checksum": "SHA-256:6ebdc25c1fb7fc1d4f2509db82a6bd617e0b9307cb9192994db7184a8f6e209c",
+              "size": "157477"
             }
           ]
         },
