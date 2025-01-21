@@ -1046,6 +1046,13 @@
               "size": "262217286"
             },
             {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:d4ce0de062420daab140161086ba017642365977e148d20f55a8807b1eacd703",
+              "size": "258277148"
+            },
+            {
               "host": "x86_64-pc-linux-gnu",
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
               "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
@@ -1170,6 +1177,13 @@
               "archiveFileName": "xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
               "checksum": "SHA-256:07d4a1443fa06552b9c15cc2d6b837c2bc22e4f85fc8e071e884a0b3cffe03c7",
               "size": "2344148"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-4-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:9cde393785869267ae10d152c914bd2b4c05a8ea1cdc9aa13b9c48bb8a231c0f",
+              "size": "2262193"
             },
             {
               "host": "x86_64-pc-linux-gnu",
