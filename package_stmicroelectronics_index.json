@@ -868,7 +868,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.16.0"
+              "version": "1.17.1"
             }
           ]
         },        
@@ -1814,6 +1814,55 @@
               "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
               "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
               "size": "13758007"
+            }
+          ]
+        },
+        {
+          "name": "STM32_SVD",
+          "version": "1.17.1",
+          "systems":
+          [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.17.1/STM32_SVD-1.17.1.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.17.1.tar.bz2",
+              "checksum": "SHA-256:7c82476dc87a0fa2ce6e6582c137a6b955c331e1489873a58fffc98d9bc0e353",
+              "size": "13956079"
             }
           ]
         },
