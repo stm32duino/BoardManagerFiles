@@ -853,7 +853,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "xpack-openocd",
-              "version": "0.12.0-5"
+              "version": "0.12.0-6"
             },
             {
               "packager": "STMicroelectronics",
@@ -1322,50 +1322,50 @@
         },
         {
           "name": "xpack-openocd",
-          "version": "0.12.0-5",
+          "version": "0.12.0-6",
           "systems":
           [
             {
               "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-linux-arm.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-5-linux-arm.tar.gz",
-              "checksum": "SHA-256:c7c93d1aa68d36bfd0e15757b6564ab938d0fa555626e51c8836d501694ed648",
-              "size": "2530150"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-linux-arm.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-linux-arm.tar.gz",
+              "checksum": "SHA-256:ff7ba12cc72f46b686d249dbe1131cc0e8e7ffeffbcc06d2290f0db203d412f3",
+              "size": "2527318"
             },
             {
               "host": "aarch64-linux-gnu",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-linux-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-5-linux-arm64.tar.gz",
-              "checksum": "SHA-256:7e95cb3cbecc4ea9d84c1c7c2311af8593585ab4f350bef4800c2945808eda42",
-              "size": "2615731"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-linux-arm64.tar.gz",
+              "checksum": "SHA-256:46cca363793d35b65d815c0b9ddff765a082cfdf226868390eef69132368aa3d",
+              "size": "2614374"
             },
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-win32-x64.zip",
-              "archiveFileName": "xpack-openocd-0.12.0-5-win32-x64.zip",
-              "checksum": "SHA-256:14376c00c5354e70c8b10d342ef2220b46587bda506ff5dab4a274cf402a5ceb",
-              "size": "3089428"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-win32-x64.zip",
+              "archiveFileName": "xpack-openocd-0.12.0-6-win32-x64.zip",
+              "checksum": "SHA-256:c57724f87219bafde78f61b54fb7f303f456fed9826a3d0ee2d54d461ad58020",
+              "size": "3090548"
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-darwin-x64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-5-darwin-x64.tar.gz",
-              "checksum": "SHA-256:b7e8f1f38eb0d366d3eb486b865e047c1c375b00e035ff44806ce9a55264dd5c",
-              "size": "2365925"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-darwin-x64.tar.gz",
+              "checksum": "SHA-256:aa5052790b003f18e64691a3b8b7a650d4ce54f72fbbb23f1aed2d26a5795b76",
+              "size": "2366532"
             },
             {
               "host": "arm64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-darwin-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-5-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:ccc514dde8c183e7765c86cb21b827c8749b7e8c47a211d75ee4700468de5f64",
-              "size": "2278703"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:4f458dea82af3529d4dc71544abfd8c8c96ebe6c521868f87c6697b0866c9e99",
+              "size": "2278487"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-5/xpack-openocd-0.12.0-5-linux-x64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-5-linux-x64.tar.gz",
-              "checksum": "SHA-256:1e8dd513749c4fd78e7f194db430404d807564d16f799f66e3741b12e2cfe0b4",
-              "size": "2661910"
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-linux-x64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-linux-x64.tar.gz",
+              "checksum": "SHA-256:7e762af5f9a4f21ac03130ddce36acf996f3e67c4ee1526ed3d4f8ad89e65c77",
+              "size": "2662017"
             }
           ]
         },
