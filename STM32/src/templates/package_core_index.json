@@ -14,12 +14,12 @@
             {
               "packager": "STMicroelectronics",
               "name": "xpack-arm-none-eabi-gcc",
-              "version": "13.2.1-1.1"
+              "version": "14.2.1-1.1"
             },
             {
               "packager": "STMicroelectronics",
               "name": "xpack-openocd",
-              "version": "0.12.0-4"
+              "version": "0.12.0-5"
             },
             {
               "packager": "STMicroelectronics",
@@ -34,7 +34,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.16.0"
+              "version": "1.17.1"
             }
           ]
         }
