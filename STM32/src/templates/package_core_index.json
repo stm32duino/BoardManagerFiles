@@ -19,12 +19,12 @@
             {
               "packager": "STMicroelectronics",
               "name": "xpack-openocd",
-              "version": "0.12.0-5"
+              "version": "0.12.0-6"
             },
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.2.4"
+              "version": "2.3.0"
             },
             {
               "packager": "STMicroelectronics",
@@ -34,7 +34,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.17.1"
+              "version": "1.18.0"
             }
           ]
         }
