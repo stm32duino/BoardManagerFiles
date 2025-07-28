@@ -24,7 +24,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.3.0"
+              "version": "2.3.1"
             },
             {
               "packager": "STMicroelectronics",
@@ -34,7 +34,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.18.0"
+              "version": "1.18.1"
             }
           ]
         }
