@@ -1031,6 +1031,95 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "2.12.0-dev",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.11.0/STM32-2.11.0.tar.bz2",
+          "archiveFileName": "STM32-2.11.0.tar.bz2",
+          "checksum": "SHA-256:7b0be26d9b7cb5dae5fa51c65adc216a11f43df24f05c6fccdc3e486862a6ee2",
+          "size": "54316996",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H5 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U0 series"},
+            {"name": "Generic STM32U3 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WB0 series"},
+            {"name": "Generic STM32WBA series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "IoT continuum boards"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"},
+            {"name": "SparkFun Boards"},
+            {"name": "ELV Modular System boards"},
+            {"name": "STeaMi Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "14.2.1-1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-6"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.4.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "6.2.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_DSP",
+              "version": "1.16.2"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_NN",
+              "version": "7.0.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.20.0"
+            }
+          ]
+        },
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -1528,6 +1617,132 @@
           ]
         },
         {
+          "name": "CMSIS",
+          "version": "6.2.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS-6.2.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.2.0.tar.bz2",
+              "checksum": "SHA-256:e9dcf458a333cda8d4332bb3a4058e8c3de1626c4a567250c60151b590a1d8ce",
+              "size": "232576"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS-6.2.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.2.0.tar.bz2",
+              "checksum": "SHA-256:e9dcf458a333cda8d4332bb3a4058e8c3de1626c4a567250c60151b590a1d8ce",
+              "size": "232576"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS-6.2.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.2.0.tar.bz2",
+              "checksum": "SHA-256:e9dcf458a333cda8d4332bb3a4058e8c3de1626c4a567250c60151b590a1d8ce",
+              "size": "232576"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS-6.2.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.2.0.tar.bz2",
+              "checksum": "SHA-256:e9dcf458a333cda8d4332bb3a4058e8c3de1626c4a567250c60151b590a1d8ce",
+              "size": "232576"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS-6.2.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.2.0.tar.bz2",
+              "checksum": "SHA-256:e9dcf458a333cda8d4332bb3a4058e8c3de1626c4a567250c60151b590a1d8ce",
+              "size": "232576"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS_DSP",
+          "version": "1.16.2",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_DSP-1.16.2.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
+              "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
+              "size": "1525843"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_DSP-1.16.2.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
+              "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
+              "size": "1525843"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_DSP-1.16.2.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
+              "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
+              "size": "1525843"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_DSP-1.16.2.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
+              "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
+              "size": "1525843"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_DSP-1.16.2.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
+              "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
+              "size": "1525843"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS_NN",
+          "version": "7.0.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_NN-7.0.0.tar.bz2",
+              "archiveFileName": "CMSIS_NN-7.0.0.tar.bz2",
+              "checksum": "SHA-256:a99361b0f0352e1ca45610b451f06e24acd63643c88a2d2139caa4b6588493ec",
+              "size": "99943"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_NN-7.0.0.tar.bz2",
+              "archiveFileName": "CMSIS_NN-7.0.0.tar.bz2",
+              "checksum": "SHA-256:a99361b0f0352e1ca45610b451f06e24acd63643c88a2d2139caa4b6588493ec",
+              "size": "99943"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_NN-7.0.0.tar.bz2",
+              "archiveFileName": "CMSIS_NN-7.0.0.tar.bz2",
+              "checksum": "SHA-256:a99361b0f0352e1ca45610b451f06e24acd63643c88a2d2139caa4b6588493ec",
+              "size": "99943"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_NN-7.0.0.tar.bz2",
+              "archiveFileName": "CMSIS_NN-7.0.0.tar.bz2",
+              "checksum": "SHA-256:a99361b0f0352e1ca45610b451f06e24acd63643c88a2d2139caa4b6588493ec",
+              "size": "99943"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.2.0/CMSIS_NN-7.0.0.tar.bz2",
+              "archiveFileName": "CMSIS_NN-7.0.0.tar.bz2",
+              "checksum": "SHA-256:a99361b0f0352e1ca45610b451f06e24acd63643c88a2d2139caa4b6588493ec",
+              "size": "99943"
+            }
+          ]
+        },
+        {
           "name": "STM32Tools",
           "version": "2.0.0",
           "systems":
@@ -1843,6 +2058,48 @@
           ]
         },
         {
+          "name": "STM32Tools",
+          "version": "2.4.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.4.0/STM32Tools-2.4.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.4.0-mac.tar.bz2",
+              "checksum": "SHA-256:24837da71dfd2888900970b7a58403d559b04bbde4411af65a157809a05efb0c",
+              "size": "209941"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.4.0/STM32Tools-2.4.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.4.0-mac.tar.bz2",
+              "checksum": "SHA-256:24837da71dfd2888900970b7a58403d559b04bbde4411af65a157809a05efb0c",
+              "size": "209941"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.4.0/STM32Tools-2.4.0-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.4.0-windows.tar.bz2",
+              "checksum": "SHA-256:cb418380693f5b5774fb237f679d83cfb5fecf5dc66065b2424381794c84696d",
+              "size": "2439820"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.4.0/STM32Tools-2.4.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.4.0-mac.tar.bz2",
+              "checksum": "SHA-256:24837da71dfd2888900970b7a58403d559b04bbde4411af65a157809a05efb0c",
+              "size": "209941"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.4.0/STM32Tools-2.4.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.4.0-linux.tar.bz2",
+              "checksum": "SHA-256:774944ca27a8f57a23d418c716af6ce3707545b5e121996f958c3856f6325d83",
+              "size": "203281"
+            }
+          ]
+        },
+        {
           "name": "STM32_SVD",
           "version": "1.15.1",
           "systems":
@@ -1951,6 +2208,48 @@
               "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
               "checksum": "SHA-256:35a8c5e023eb2a1ecc391b44651cb9683f116ab25dbb96b32500602f0e3abf2f",
               "size": "13901813"
+            }
+          ]
+        },
+        {
+          "name": "STM32_SVD",
+          "version": "1.20.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.20.0/STM32_SVD-1.20.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.20.0.tar.bz2",
+              "checksum": "SHA-256:453e4e5f699f246d3e9d712d85dd5acfa38663efcc0a9ec00e7b07455a6057d6",
+              "size": "14564369"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.20.0/STM32_SVD-1.20.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.20.0.tar.bz2",
+              "checksum": "SHA-256:453e4e5f699f246d3e9d712d85dd5acfa38663efcc0a9ec00e7b07455a6057d6",
+              "size": "14564369"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.20.0/STM32_SVD-1.20.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.20.0.tar.bz2",
+              "checksum": "SHA-256:453e4e5f699f246d3e9d712d85dd5acfa38663efcc0a9ec00e7b07455a6057d6",
+              "size": "14564369"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.20.0/STM32_SVD-1.20.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.20.0.tar.bz2",
+              "checksum": "SHA-256:453e4e5f699f246d3e9d712d85dd5acfa38663efcc0a9ec00e7b07455a6057d6",
+              "size": "14564369"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.20.0/STM32_SVD-1.20.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.20.0.tar.bz2",
+              "checksum": "SHA-256:453e4e5f699f246d3e9d712d85dd5acfa38663efcc0a9ec00e7b07455a6057d6",
+              "size": "14564369"
             }
           ]
         },
