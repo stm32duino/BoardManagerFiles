@@ -4,6 +4,20 @@
           "systems":
           [
             {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/%%VERSION%%/%%FILENAMEMAC%%",
+              "archiveFileName": "%%FILENAMEMAC%%",
+              "checksum": "SHA-256:%%CHECKSUMMAC%%",
+              "size": "%%SIZEMAC%%"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/%%VERSION%%/%%FILENAMEMAC%%",
+              "archiveFileName": "%%FILENAMEMAC%%",
+              "checksum": "SHA-256:%%CHECKSUMMAC%%",
+              "size": "%%SIZEMAC%%"
+            },
+            {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/%%VERSION%%/%%FILENAMEWIN%%",
               "archiveFileName": "%%FILENAMEWIN%%",
@@ -12,13 +26,6 @@
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/%%VERSION%%/%%FILENAMEMAC%%",
-              "archiveFileName": "%%FILENAMEMAC%%",
-              "checksum": "SHA-256:%%CHECKSUMMAC%%",
-              "size": "%%SIZEMAC%%"
-            },
-            {
-              "host": "arm64-apple-darwin",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/%%VERSION%%/%%FILENAMEMAC%%",
               "archiveFileName": "%%FILENAMEMAC%%",
               "checksum": "SHA-256:%%CHECKSUMMAC%%",

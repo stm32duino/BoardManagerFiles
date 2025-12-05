@@ -1253,20 +1253,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm.tar.gz",
-              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm.tar.gz",
-              "checksum": "SHA-256:9a6db147c34f7ea668cc37a139d2667a58f8b2bbee2359f23e48ffd300f8fc2f",
-              "size": "257683778"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm64.tar.gz",
-              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm64.tar.gz",
-              "checksum": "SHA-256:ab7f75d95ead0b1efb7432e7f034f9575cc3d23dc1b03d41af1ec253486d19de",
-              "size": "265190134"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
               "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
@@ -1279,13 +1265,6 @@
               "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-x64.tar.gz",
               "checksum": "SHA-256:1ecc0fd6c31020aff702204f51459b4b00ff0d12b9cd95e832399881d819aa57",
               "size": "262217286"
-            },
-            {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
-              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:d4ce0de062420daab140161086ba017642365977e148d20f55a8807b1eacd703",
-              "size": "258277148"
             },
             {
               "host": "x86_64-pc-linux-gnu",
@@ -1302,11 +1281,11 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-linux-arm.tar.gz",
-              "archiveFileName": "xpack-arm-none-eabi-gcc-14.2.1-1.1-linux-arm.tar.gz",
-              "checksum": "SHA-256:7a0beb722c4a290e35d041d942612a38336d76a60c78286d116e79e82d82f285",
-              "size": "271654556"
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:f52ea3760c53b25d726a7345be60a210736293db85f92daa39d1d22d34e2c995",
+              "size": "277780822"
             },
             {
               "host": "aarch64-linux-gnu",
@@ -1327,13 +1306,6 @@
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-x64.tar.gz",
               "archiveFileName": "xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-x64.tar.gz",
               "checksum": "SHA-256:b5bf8d5af099fd464d1543e5b8901308fb64116fa7a244426cacf4ff1b882fc7",
-              "size": "277780822"
-            },
-            {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-arm64.tar.gz",
-              "archiveFileName": "xpack-arm-none-eabi-gcc-14.2.1-1.1-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:f52ea3760c53b25d726a7345be60a210736293db85f92daa39d1d22d34e2c995",
               "size": "277780822"
             },
             {
@@ -1393,20 +1365,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-3/xpack-openocd-0.12.0-3-linux-arm.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-3-linux-arm.tar.gz",
-              "checksum": "SHA-256:8f956ed0c5027c5e655fe590712aef2dbd21a01777b5c008f772b2d1b45fb095",
-              "size": "2479426"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-3/xpack-openocd-0.12.0-3-linux-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-3-linux-arm64.tar.gz",
-              "checksum": "SHA-256:892b2ecc624521e5947e4857d7dfd4af03e19ef37da73ae91215a1001864ed75",
-              "size": "2556193"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-3/xpack-openocd-0.12.0-3-win32-x64.zip",
               "archiveFileName": "xpack-openocd-0.12.0-3-win32-x64.zip",
@@ -1435,20 +1393,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm.tar.gz",
-              "checksum": "SHA-256:a530ca8bb571e0e97dee8d959c53b5824206079fbd3e934e440daa51744a540e",
-              "size": "2493684"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-4-linux-arm64.tar.gz",
-              "checksum": "SHA-256:75c6fa54112c8ec896ef9e4e83d0790a27d01c543d8f0378cfeeb53cdc418ab2",
-              "size": "2571961"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-win32-x64.zip",
               "archiveFileName": "xpack-openocd-0.12.0-4-win32-x64.zip",
@@ -1461,13 +1405,6 @@
               "archiveFileName": "xpack-openocd-0.12.0-4-darwin-x64.tar.gz",
               "checksum": "SHA-256:07d4a1443fa06552b9c15cc2d6b837c2bc22e4f85fc8e071e884a0b3cffe03c7",
               "size": "2344148"
-            },
-            {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-4/xpack-openocd-0.12.0-4-darwin-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-4-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:9cde393785869267ae10d152c914bd2b4c05a8ea1cdc9aa13b9c48bb8a231c0f",
-              "size": "2262193"
             },
             {
               "host": "x86_64-pc-linux-gnu",
@@ -1484,11 +1421,11 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-linux-arm.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-6-linux-arm.tar.gz",
-              "checksum": "SHA-256:ff7ba12cc72f46b686d249dbe1131cc0e8e7ffeffbcc06d2290f0db203d412f3",
-              "size": "2527318"
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:4f458dea82af3529d4dc71544abfd8c8c96ebe6c521868f87c6697b0866c9e99",
+              "size": "2278487"
             },
             {
               "host": "aarch64-linux-gnu",
@@ -1510,13 +1447,6 @@
               "archiveFileName": "xpack-openocd-0.12.0-6-darwin-x64.tar.gz",
               "checksum": "SHA-256:aa5052790b003f18e64691a3b8b7a650d4ce54f72fbbb23f1aed2d26a5795b76",
               "size": "2366532"
-            },
-            {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-6/xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
-              "archiveFileName": "xpack-openocd-0.12.0-6-darwin-arm64.tar.gz",
-              "checksum": "SHA-256:4f458dea82af3529d4dc71544abfd8c8c96ebe6c521868f87c6697b0866c9e99",
-              "size": "2278487"
             },
             {
               "host": "x86_64-pc-linux-gnu",
@@ -1575,20 +1505,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.9.0.tar.bz2",
-              "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
-              "size": "2365397"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.9.0.tar.bz2",
-              "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
-              "size": "2365397"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
               "archiveFileName": "CMSIS-5.9.0.tar.bz2",
@@ -1603,21 +1519,7 @@
               "size": "2365397"
             },
             {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.9.0.tar.bz2",
-              "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
-              "size": "2365397"
-            },
-            {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
-              "archiveFileName": "CMSIS-5.9.0.tar.bz2",
-              "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
-              "size": "2365397"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
               "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
               "archiveFileName": "CMSIS-5.9.0.tar.bz2",
               "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
@@ -1825,13 +1727,6 @@
               "archiveFileName": "STM32Tools-2.2.2-linux.tar.bz2",
               "checksum": "SHA-256:6ef5e1e6e58c95ce6a62725eb8eb16f799ebb88ac9677a4967257c214a1f145b",
               "size": "157362"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.2/STM32Tools-2.2.2-linux.tar.bz2",
-              "archiveFileName": "STM32Tools-2.2.2-linux.tar.bz2",
-              "checksum": "SHA-256:6ef5e1e6e58c95ce6a62725eb8eb16f799ebb88ac9677a4967257c214a1f145b",
-              "size": "157362"
             }
           ]
         },
@@ -1860,13 +1755,6 @@
               "archiveFileName": "STM32Tools-2.2.3-linux.tar.bz2",
               "checksum": "SHA-256:edd142d2caade2265059f83e79505b06f9378b720393640a30e99f77d8e0555b",
               "size": "157436"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.3/STM32Tools-2.2.3-linux.tar.bz2",
-              "archiveFileName": "STM32Tools-2.2.3-linux.tar.bz2",
-              "checksum": "SHA-256:edd142d2caade2265059f83e79505b06f9378b720393640a30e99f77d8e0555b",
-              "size": "157436"
             }
           ]
         },
@@ -1888,13 +1776,6 @@
               "archiveFileName": "STM32Tools-2.2.4-mac.tar.bz2",
               "checksum": "SHA-256:3af40861b527e3323ce284dc88f6990e581691e56c6f98dfd3687cef4cbb4310",
               "size": "103686"
-            },
-            {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-linux.tar.bz2",
-              "archiveFileName": "STM32Tools-2.2.4-linux.tar.bz2",
-              "checksum": "SHA-256:6ebdc25c1fb7fc1d4f2509db82a6bd617e0b9307cb9192994db7184a8f6e209c",
-              "size": "157477"
             },
             {
               "host": "x86_64-pc-linux-gnu",
@@ -1919,13 +1800,6 @@
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.3.0/STM32Tools-2.3.0-mac.tar.bz2",
-              "archiveFileName": "STM32Tools-2.3.0-mac.tar.bz2",
-              "checksum": "SHA-256:42f69c5246a3dcd0302c0710d5116a82a0e70ec41ebbacdcc5d96709410be6c1",
-              "size": "206540"
-            },
-            {
-              "host": "arm64-apple-darwin",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.3.0/STM32Tools-2.3.0-mac.tar.bz2",
               "archiveFileName": "STM32Tools-2.3.0-mac.tar.bz2",
               "checksum": "SHA-256:42f69c5246a3dcd0302c0710d5116a82a0e70ec41ebbacdcc5d96709410be6c1",
@@ -1960,13 +1834,6 @@
               "size": "206654"
             },
             {
-              "host": "arm64-apple-darwin",
-              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.3.1/STM32Tools-2.3.1-mac.tar.bz2",
-              "archiveFileName": "STM32Tools-2.3.1-mac.tar.bz2",
-              "checksum": "SHA-256:333e9dbbffc74561f502b043feb078dffa89827b8c8a1b16d9e5edcf4256a722",
-              "size": "206654"
-            },
-            {
               "host": "x86_64-pc-linux-gnu",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.3.1/STM32Tools-2.3.1-linux.tar.bz2",
               "archiveFileName": "STM32Tools-2.3.1-linux.tar.bz2",
@@ -1980,20 +1847,6 @@
           "version": "1.15.1",
           "systems":
           [
-            {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
-              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
-              "size": "12998735"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
-              "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
-              "size": "12998735"
-            },
             {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
@@ -2023,20 +1876,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
-              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
-              "size": "13758007"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
-              "checksum": "SHA-256:c1e31bb701054f62e2cf4631b19956690d721e637f249ceb12e7ec2d5aef5832",
-              "size": "13758007"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.16.0/STM32_SVD-1.16.0.tar.bz2",
               "archiveFileName": "STM32_SVD-1.16.0.tar.bz2",
@@ -2065,20 +1904,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.0/STM32_SVD-1.18.0.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.0.tar.bz2",
-              "checksum": "SHA-256:a4e5b0f8550959d744bcc9b22a31dce87929e491631d4d7724728eca69b4dfac",
-              "size": "13633290"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.0/STM32_SVD-1.18.0.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.0.tar.bz2",
-              "checksum": "SHA-256:a4e5b0f8550959d744bcc9b22a31dce87929e491631d4d7724728eca69b4dfac",
-              "size": "13633290"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.0/STM32_SVD-1.18.0.tar.bz2",
               "archiveFileName": "STM32_SVD-1.18.0.tar.bz2",
@@ -2087,13 +1912,6 @@
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.0/STM32_SVD-1.18.0.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.0.tar.bz2",
-              "checksum": "SHA-256:a4e5b0f8550959d744bcc9b22a31dce87929e491631d4d7724728eca69b4dfac",
-              "size": "13633290"
-            },
-            {
-              "host": "arm64-apple-darwin",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.0/STM32_SVD-1.18.0.tar.bz2",
               "archiveFileName": "STM32_SVD-1.18.0.tar.bz2",
               "checksum": "SHA-256:a4e5b0f8550959d744bcc9b22a31dce87929e491631d4d7724728eca69b4dfac",
@@ -2114,20 +1932,6 @@
           "systems":
           [
             {
-              "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.1/STM32_SVD-1.18.1.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
-              "checksum": "SHA-256:35a8c5e023eb2a1ecc391b44651cb9683f116ab25dbb96b32500602f0e3abf2f",
-              "size": "13901813"
-            },
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.1/STM32_SVD-1.18.1.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
-              "checksum": "SHA-256:35a8c5e023eb2a1ecc391b44651cb9683f116ab25dbb96b32500602f0e3abf2f",
-              "size": "13901813"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.1/STM32_SVD-1.18.1.tar.bz2",
               "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
@@ -2136,13 +1940,6 @@
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.1/STM32_SVD-1.18.1.tar.bz2",
-              "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
-              "checksum": "SHA-256:35a8c5e023eb2a1ecc391b44651cb9683f116ab25dbb96b32500602f0e3abf2f",
-              "size": "13901813"
-            },
-            {
-              "host": "arm64-apple-darwin",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.18.1/STM32_SVD-1.18.1.tar.bz2",
               "archiveFileName": "STM32_SVD-1.18.1.tar.bz2",
               "checksum": "SHA-256:35a8c5e023eb2a1ecc391b44651cb9683f116ab25dbb96b32500602f0e3abf2f",
