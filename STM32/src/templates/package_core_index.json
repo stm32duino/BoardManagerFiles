@@ -24,17 +24,27 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.3.1"
+              "version": "2.4.0"
             },
             {
               "packager": "STMicroelectronics",
               "name": "CMSIS",
-              "version": "5.9.0"
+              "version": "6.2.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_DSP",
+              "version": "1.16.2"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_NN",
+              "version": "7.0.0"
             },
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.18.1"
+              "version": "1.20.0"
             }
           ]
         }
