@@ -29,12 +29,12 @@
             {
               "packager": "STMicroelectronics",
               "name": "CMSIS",
-              "version": "6.2.0"
+              "version": "6.3.0"
             },
             {
               "packager": "STMicroelectronics",
               "name": "CMSIS_DSP",
-              "version": "1.16.2"
+              "version": "1.17.0"
             },
             {
               "packager": "STMicroelectronics",
