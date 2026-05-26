@@ -1121,6 +1121,96 @@
           ]
         },
         {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "3.0.0-dev",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.12.0/STM32-2.12.0.tar.bz2",
+          "archiveFileName": "STM32-2.12.0.tar.bz2",
+          "checksum": "SHA-256:8d1ff26959c4cef55996f25b8403b029234264dc962793cff832e9ddc27e7544",
+          "size": "55110080",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H5 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U0 series"},
+            {"name": "Generic STM32U3 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WB0 series"},
+            {"name": "Generic STM32WBA series"},
+            {"name": "Generic STM32WL3 series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "IoT continuum boards"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"},
+            {"name": "SparkFun Boards"},
+            {"name": "ELV Modular System boards"},
+            {"name": "STeaMi Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "14.2.1-1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-6"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.4.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "6.3.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_DSP",
+              "version": "1.17.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_NN",
+              "version": "7.0.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.20.0"
+            }
+          ]
+        },        
+        {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
           "version": "1.0.0",
@@ -1660,6 +1750,48 @@
           ]
         },
         {
+          "name": "CMSIS",
+          "version": "6.3.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS-6.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.3.0.tar.bz2",
+              "checksum": "SHA-256:a37aac32c442955b3cdd601de72da6d384750450e40fa8581051d14c99f92118",
+              "size": "253988"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS-6.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.3.0.tar.bz2",
+              "checksum": "SHA-256:a37aac32c442955b3cdd601de72da6d384750450e40fa8581051d14c99f92118",
+              "size": "253988"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS-6.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.3.0.tar.bz2",
+              "checksum": "SHA-256:a37aac32c442955b3cdd601de72da6d384750450e40fa8581051d14c99f92118",
+              "size": "253988"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS-6.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.3.0.tar.bz2",
+              "checksum": "SHA-256:a37aac32c442955b3cdd601de72da6d384750450e40fa8581051d14c99f92118",
+              "size": "253988"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS-6.3.0.tar.bz2",
+              "archiveFileName": "CMSIS-6.3.0.tar.bz2",
+              "checksum": "SHA-256:a37aac32c442955b3cdd601de72da6d384750450e40fa8581051d14c99f92118",
+              "size": "253988"
+            }
+          ]
+        },
+        {
           "name": "CMSIS_DSP",
           "version": "1.16.2",
           "systems":
@@ -1698,6 +1830,48 @@
               "archiveFileName": "CMSIS_DSP-1.16.2.tar.bz2",
               "checksum": "SHA-256:04f48ceed53eeecb1b37b9b8d06f6ff1ee1cf62073195e0cee312b824446c14c",
               "size": "1525843"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS_DSP",
+          "version": "1.17.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS_DSP-1.17.0.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.17.0.tar.bz2",
+              "checksum": "SHA-256:19a2379b527fb4931b1450a1de51d2f40a01fa1b1e74c95b778214d72edf2200",
+              "size": "1339859"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS_DSP-1.17.0.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.17.0.tar.bz2",
+              "checksum": "SHA-256:19a2379b527fb4931b1450a1de51d2f40a01fa1b1e74c95b778214d72edf2200",
+              "size": "1339859"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS_DSP-1.17.0.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.17.0.tar.bz2",
+              "checksum": "SHA-256:19a2379b527fb4931b1450a1de51d2f40a01fa1b1e74c95b778214d72edf2200",
+              "size": "1339859"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS_DSP-1.17.0.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.17.0.tar.bz2",
+              "checksum": "SHA-256:19a2379b527fb4931b1450a1de51d2f40a01fa1b1e74c95b778214d72edf2200",
+              "size": "1339859"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/6.3.0/CMSIS_DSP-1.17.0.tar.bz2",
+              "archiveFileName": "CMSIS_DSP-1.17.0.tar.bz2",
+              "checksum": "SHA-256:19a2379b527fb4931b1450a1de51d2f40a01fa1b1e74c95b778214d72edf2200",
+              "size": "1339859"
             }
           ]
         },
