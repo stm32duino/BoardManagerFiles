@@ -1206,7 +1206,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32_SVD",
-              "version": "1.20.0"
+              "version": "1.22.0"
             }
           ]
         },        
@@ -2428,6 +2428,48 @@
             }
           ]
         },
+        {
+          "name": "STM32_SVD",
+          "version": "1.22.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.22.0/STM32_SVD-1.22.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.22.0.tar.bz2",
+              "checksum": "SHA-256:fd7ac11173da670caf5bdcc0c7d9e504dfcf15fc5744b63e0a2d2854397c890b",
+              "size": "18130040"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.22.0/STM32_SVD-1.22.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.22.0.tar.bz2",
+              "checksum": "SHA-256:fd7ac11173da670caf5bdcc0c7d9e504dfcf15fc5744b63e0a2d2854397c890b",
+              "size": "18130040"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.22.0/STM32_SVD-1.22.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.22.0.tar.bz2",
+              "checksum": "SHA-256:fd7ac11173da670caf5bdcc0c7d9e504dfcf15fc5744b63e0a2d2854397c890b",
+              "size": "18130040"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.22.0/STM32_SVD-1.22.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.22.0.tar.bz2",
+              "checksum": "SHA-256:fd7ac11173da670caf5bdcc0c7d9e504dfcf15fc5744b63e0a2d2854397c890b",
+              "size": "18130040"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.22.0/STM32_SVD-1.22.0.tar.bz2",
+              "archiveFileName": "STM32_SVD-1.22.0.tar.bz2",
+              "checksum": "SHA-256:fd7ac11173da670caf5bdcc0c7d9e504dfcf15fc5744b63e0a2d2854397c890b",
+              "size": "18130040"
+            }
+          ]
+        },        
         {
           "name": "cxppstm8",
           "version": "4.1.3",
