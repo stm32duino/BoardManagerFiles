@@ -1123,12 +1123,12 @@
         {
           "name": "STM32 MCU based boards",
           "architecture": "stm32",
-          "version": "3.0.0-dev",
+          "version": "3.0.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.12.0/STM32-2.12.0.tar.bz2",
-          "archiveFileName": "STM32-2.12.0.tar.bz2",
-          "checksum": "SHA-256:8d1ff26959c4cef55996f25b8403b029234264dc962793cff832e9ddc27e7544",
-          "size": "55110080",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/3.0.0/STM32-3.0.0.tar.bz2",
+          "archiveFileName": "STM32-3.0.0.tar.bz2",
+          "checksum": "SHA-256:75a92c551873f030b95729bad0880757428b33455d3bf47cd6796f37f07387c5",
+          "size": "59533121",
           "boards": [
             {"name": "Nucleo-144"},
             {"name": "Nucleo-64"},
@@ -1137,6 +1137,7 @@
             {"name": "Eval"},
             {"name": "STM32MP1 series coprocessor"},
             {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32C5 series"},
             {"name": "Generic STM32F0 series"},
             {"name": "Generic STM32F1 series"},
             {"name": "Generic STM32F2 series"},
@@ -1186,7 +1187,7 @@
             {
               "packager": "STMicroelectronics",
               "name": "STM32Tools",
-              "version": "2.4.0"
+              "version": "2.5.0"
             },
             {
               "packager": "STMicroelectronics",
@@ -2274,6 +2275,48 @@
             }
           ]
         },
+        {
+          "name": "STM32Tools",
+          "version": "2.5.0",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.0/STM32Tools-2.5.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.0-mac.tar.bz2",
+              "checksum": "SHA-256:8f01ccbb02c49f208465ae03d3a8bcc2dc0935ac5f778103ccd480714bffd8e9",
+              "size": "210679"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.0/STM32Tools-2.5.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.0-mac.tar.bz2",
+              "checksum": "SHA-256:8f01ccbb02c49f208465ae03d3a8bcc2dc0935ac5f778103ccd480714bffd8e9",
+              "size": "210679"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.0/STM32Tools-2.5.0-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.0-windows.tar.bz2",
+              "checksum": "SHA-256:e5d0ef2b2543cdebfa3b6a32e0b4e1ef5dabd80227d970862317f834dfdb5b12",
+              "size": "2440408"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.0/STM32Tools-2.5.0-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.0-mac.tar.bz2",
+              "checksum": "SHA-256:8f01ccbb02c49f208465ae03d3a8bcc2dc0935ac5f778103ccd480714bffd8e9",
+              "size": "210679"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.0/STM32Tools-2.5.0-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.0-linux.tar.bz2",
+              "checksum": "SHA-256:5eb094169243b6aa0a3f3e064a9af66f4c37a146b90e21bc1f565bcbe4dbb72f",
+              "size": "203859"
+            }
+          ]
+        },        
         {
           "name": "STM32_SVD",
           "version": "1.15.1",
