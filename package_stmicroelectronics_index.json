@@ -1210,7 +1210,100 @@
               "version": "1.22.0"
             }
           ]
-        },        
+        },
+        {
+          "name": "STM32 MCU based boards",
+          "architecture": "stm32",
+          "version": "3.1.0",
+          "category": "Contributed",
+          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/3.1.0/STM32-3.1.0.tar.bz2",
+          "archiveFileName": "STM32-3.1.0.tar.bz2",
+          "checksum": "SHA-256:b26beec2b90d7c0e2729f56971f07fc521440e52b62ab10b2dcdb98b68c69a1c",
+          "size": "63230152",
+          "boards": [
+            {"name": "Nucleo-144"},
+            {"name": "Nucleo-64"},
+            {"name": "Nucleo-32"},
+            {"name": "Discovery"},
+            {"name": "Eval"},
+            {"name": "STM32MP1 series coprocessor"},
+            {"name": "Generic STM32C0 series"},
+            {"name": "Generic STM32C5 series"},
+            {"name": "Generic STM32F0 series"},
+            {"name": "Generic STM32F1 series"},
+            {"name": "Generic STM32F2 series"},
+            {"name": "Generic STM32F3 series"},
+            {"name": "Generic STM32F4 series"},
+            {"name": "Generic STM32F7 series"},
+            {"name": "Generic STM32G0 series"},
+            {"name": "Generic STM32G4 series"},
+            {"name": "Generic STM32H5 series"},
+            {"name": "Generic STM32H7 Series"},
+            {"name": "Generic STM32L0 series"},
+            {"name": "Generic STM32L1 series"},
+            {"name": "Generic STM32L4 series"},
+            {"name": "Generic STM32L5 series"},
+            {"name": "Generic STM32U0 series"},
+            {"name": "Generic STM32U3 series"},
+            {"name": "Generic STM32U5 series"},
+            {"name": "Generic STM32WB series"},
+            {"name": "Generic STM32WB0 series"},
+            {"name": "Generic STM32WBA series"},
+            {"name": "Generic STM32WL series"},
+            {"name": "Generic STM32WL3 series"},
+            {"name": "3D printer boards"},
+            {"name": "Blues boards"},
+            {"name": "Elecgator boards"},
+            {"name": "Electronic speed controllers"},
+            {"name": "ELV Modular System boards"},
+            {"name": "Garatronic-McHobby"},
+            {"name": "Generic Flight Controllers"},
+            {"name": "IoT continuum boards"},
+            {"name": "LoRa boards"},
+            {"name": "Midatronics boards"},
+            {"name": "Phoque Brushless Motor Drivers"},
+            {"name": "Seeed Studio"},
+            {"name": "SparkFun Boards"},
+            {"name": "STeaMi Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "14.2.1-1.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "xpack-openocd",
+              "version": "0.12.0-6"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32Tools",
+              "version": "2.5.1"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS",
+              "version": "6.3.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_DSP",
+              "version": "1.17.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "CMSIS_NN",
+              "version": "7.0.0"
+            },
+            {
+              "packager": "STMicroelectronics",
+              "name": "STM32_SVD",
+              "version": "1.22.0"
+            }
+          ]
+        },
         {
           "name": "STM8 MCU based boards",
           "architecture": "stm8",
@@ -2316,7 +2409,49 @@
               "size": "203859"
             }
           ]
-        },        
+        },
+        {
+          "name": "STM32Tools",
+          "version": "2.5.1",
+          "systems":
+          [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.1/STM32Tools-2.5.1-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.1-mac.tar.bz2",
+              "checksum": "SHA-256:a39d8ec470227d074a4bed84bc17041f33e708fc53c7ab382c2e7512bee21960",
+              "size": "212459"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.1/STM32Tools-2.5.1-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.1-mac.tar.bz2",
+              "checksum": "SHA-256:a39d8ec470227d074a4bed84bc17041f33e708fc53c7ab382c2e7512bee21960",
+              "size": "212459"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.1/STM32Tools-2.5.1-windows.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.1-windows.tar.bz2",
+              "checksum": "SHA-256:9418a21dba9d8155d4aedcc1ed6f20a54e25b7ba1b78c60ce22edd5479f4bafa",
+              "size": "2396318"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.1/STM32Tools-2.5.1-mac.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.1-mac.tar.bz2",
+              "checksum": "SHA-256:a39d8ec470227d074a4bed84bc17041f33e708fc53c7ab382c2e7512bee21960",
+              "size": "212459"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.5.1/STM32Tools-2.5.1-linux.tar.bz2",
+              "archiveFileName": "STM32Tools-2.5.1-linux.tar.bz2",
+              "checksum": "SHA-256:52bf94ac2eac36dc0457883460ef20041d16a25ae8553de7c652db5dfa71db28",
+              "size": "205647"
+            }
+          ]
+        },
         {
           "name": "STM32_SVD",
           "version": "1.15.1",
